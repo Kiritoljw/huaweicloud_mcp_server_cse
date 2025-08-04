@@ -152,7 +152,7 @@ def ShowEngine(engine_id:str) -> list:
 
 #--------------------------------------------------------------------------Nacos服务发现--------------------------------------------------------------------------#
 @mcp.tool()
-def NacosRegisterInstance(ip:str, port:int, serviceName:str , namespaceId:str = "public" ,  ephemeral:bool = False , enabled:bool=True , healthy:bool=True) ->list:
+def NacosRegisterInstance(ip:str, port:int, serviceName:str , namespaceId:str = "public" ,  ephemeral:bool = False , enabled:bool=True , healthy:bool=True) :
     """
     Description: Register an instance to service.
     
@@ -165,7 +165,7 @@ def NacosRegisterInstance(ip:str, port:int, serviceName:str , namespaceId:str = 
         enabled (bool) : enabled or not
         healthy (bool) : healthy or not
     Return:
-        dict: Response from the Nacos service registration
+        dict: ok
     """
     base_url = "http://100.85.123.17:8848/nacos/v1"
     url = f"{base_url}/ns/instance"
@@ -185,7 +185,7 @@ def NacosRegisterInstance(ip:str, port:int, serviceName:str , namespaceId:str = 
         'content-Type' : 'application/json'
     }
     try:
-        logger.info(f"正在注册实例到服务")
+        logger.info(f"正在注册实例到服务{serviceName}")
         response = requests.post(url, params=params, headers=headers, verify=False, timeout=30)
         response.raise_for_status()
         if response.text.strip() == 'ok':
@@ -208,21 +208,27 @@ def NacosRegisterInstance(ip:str, port:int, serviceName:str , namespaceId:str = 
         logger.error(f"注册实例未预期错误：{e}")
         return {"error": "服务内部错误"}
     
-
-@mcp.tool()    
-def NacosQueryInstances(serviceName:str)->list:
+@mcp.tool()
+def NacosDeregisterInstance(ip:str, port:int, serviceName:str , namespaceId:str = "public" ,  ephemeral:bool = False ) :
     """
-    Description:Query instance list of service.
-
+    Description: Delete instance from service.
+    
     Args:
-
+        ip (str) : IP of instance
+        port (int) : Port of instance
+        servicename (str) : Name of the service to delete
     Return:
+        dict: ok
     """
-    base_url =  "http://100.85.123.17:8848/nacos/v1"
-    url = f"{base_url}/ns/instance/list"
+    base_url = "http://100.85.123.17:8848/nacos/v1"
+    url = f"{base_url}/ns/instance"
 
     params = {
-        'serviceName':serviceName
+        'ip' : ip,
+        'port' : port,
+        'serviceName' : serviceName,
+        'namespaceId' : namespaceId,
+        'ephemeral' : ephemeral
     }
 
     headers = {
@@ -230,21 +236,125 @@ def NacosQueryInstances(serviceName:str)->list:
         'content-Type' : 'application/json'
     }
     try:
-        logger.info(f"正在查询服务下的实例列表")
-        response = requests.get(url, headers=headers, verify=False, timeout=30)
+        logger.info(f"正在删除实例{serviceName}")
+        response = requests.delete(url, params=params, headers=headers, verify=False, timeout=30)
+        response.raise_for_status()
+        if response.text.strip() == 'ok':
+            logger.info(f"成功删除实例")
+        return response
+    
+    except requests.exceptions.Timeout:
+        logger.error("删除实例超时")
+        return {"error": "请求超时"}
+    except requests.exceptions.HTTPError as e:
+        logger.error(f"HTTP错误: {e.response.status_code} - {e}")
+        return {"error": f"HTTP错误: {e.response.status_code}"}
+    except requests.exceptions.RequestException as e:
+        logger.error(f"删除实例失败: {e}")
+        return {"error": "网络请求失败"}
+    except ValueError as e:
+        logger.error(f"删除实例JSON解析失败：{e}")
+        return {"error": "响应格式错误"}
+    except Exception as e:
+        logger.error(f"删除实例未预期错误：{e}")
+        return {"error": "服务内部错误"}
+
+@mcp.tool()
+def NacosModifyInstance(ip:str, port:int, serviceName:str , namespaceId:str = "public" ,  ephemeral:bool = False , enabled:bool=True) :
+    """
+    Description: Register an instance to service.
+    
+    Args:
+        ip (str) : IP of instance
+        port (int) : Port of instance
+        servicename (str) : Name of the service to modify
+        namespaceId (str) : ID of namespace
+        ephemeral (bool) : if instance is ephemeral
+        enabled (bool) : enabled or not
+    Return:
+        dict: ok
+    """
+    base_url = "http://100.85.123.17:8848/nacos/v1"
+    url = f"{base_url}/ns/instance"
+
+    params = {
+        'ip' : ip,
+        'port' : port,
+        'serviceName' : serviceName,
+        'namespaceId' : namespaceId,
+        'ephemeral' : ephemeral,
+        'enabled' : enabled,
+    }
+
+    headers = {
+        'X-Auth-Token' : TOKEN,
+        'content-Type' : 'application/json'
+    }
+    try:
+        logger.info(f"正在修改服务{serviceName}下实例")
+        response = requests.put(url, params=params, headers=headers, verify=False, timeout=30)
+        response.raise_for_status()
+        if response.text.strip() == 'ok':
+            logger.info(f"成功修改实例")
+        return response
+    
+    except requests.exceptions.Timeout:
+        logger.error("修改实例超时")
+        return {"error": "请求超时"}
+    except requests.exceptions.HTTPError as e:
+        logger.error(f"HTTP错误: {e.response.status_code} - {e}")
+        return {"error": f"HTTP错误: {e.response.status_code}"}
+    except requests.exceptions.RequestException as e:
+        logger.error(f"修改实例失败: {e}")
+        return {"error": "网络请求失败"}
+    except ValueError as e:
+        logger.error(f"修改实例JSON解析失败：{e}")
+        return {"error": "响应格式错误"}
+    except Exception as e:
+        logger.error(f"修改实例未预期错误：{e}")
+        return {"error": "服务内部错误"}
+
+@mcp.tool()    
+def NacosQueryInstances(serviceName:str , namespaceId:str="public" , healthyOnly:bool=False)->list:
+    """
+    Description : Query instance list of service.
+
+    Args:
+        servicename (str) : Name of the service to query
+        namespaceId (str) : Id of namespace
+        healthyOnly (bool) : return healthy only or not
+    Return:
+
+    """
+    base_url =  "http://100.85.123.17:8848/nacos/v1"
+    url = f"{base_url}/ns/instance/list"
+
+    params = {
+        'serviceName' : serviceName,
+        'namespaceId' : namespaceId,
+        'healthyOnly' : healthyOnly
+    }
+
+    headers = {
+        'X-Auth-Token' : TOKEN,
+        'content-Type' : 'application/json'
+    }
+    try:
+        logger.info(f"正在查询服务{serviceName}下的实例列表")
+        response = requests.get(url, params=params , headers=headers, verify=False, timeout=30)
         response.raise_for_status()
 
         data = response.json()
-        namespaces = data.get('data', [])
+        hosts = data.get('hosts', [])
 
-        logger.info(f"成功获取 {len(data)} 个实例列表")
-        return namespaces
+        logger.info(f"成功获取 {len(hosts)} 个实例列表")
+        return data
     
     except requests.exceptions.Timeout:
         logger.error("请求查询服务下的实例列表超时")
         return {"error": "请求超时"}
     except requests.exceptions.HTTPError as e:
-        logger.error(f"HTTP错误：{e.response.status_code} - {e}")
+        logger.error(f"HTTP错误:{e.response.status_code} - {e}")
         return {"error": f"HTTP错误: {e.response.status_code}"}
     except requests.exceptions.RequestException as e:
         logger.error(f"请求查询服务下的实例列表失败：{e}")
@@ -257,19 +367,29 @@ def NacosQueryInstances(serviceName:str)->list:
         return {"error": "服务内部错误"}
     
 @mcp.tool()    
-def NacosQueryInstanceDetail(serviceName:str)->list:
+def NacosQueryInstanceDetail(ip:str, port:int, serviceName:str , namespaceId:str = "public" ,  ephemeral:bool = False )->list:
     """
-    Description:Query instance details of service.
+    Description : Query instance details of service.
 
     Args:
+        ip (str) : IP of instance
+        port (int) : Port of instance
+        servicename (str) : Name of the service to query
+        namespaceId (str) : ID of namespace
+        ephemeral (bool) : if instance is ephemeral
 
     Return:
+        list
     """
     base_url =  "http://100.85.123.17:8848/nacos/v1"
-    url = f"{base_url}/ns/instance/list"
+    url = f"{base_url}/ns/instance"
 
     params = {
-        'serviceName':serviceName
+        'ip' : ip,
+        'port' : port,
+        'serviceName' : serviceName,
+        'namespaceId' : namespaceId,
+        'ephemeral' : ephemeral
     }
 
     headers = {
@@ -277,30 +397,30 @@ def NacosQueryInstanceDetail(serviceName:str)->list:
         'content-Type' : 'application/json'
     }
     try:
-        logger.info(f"正在查询服务下的实例列表")
+        logger.info(f"正在查询服务{serviceName}下的端口为{port}的实例信息")
         response = requests.get(url, params=params, headers=headers, verify=False, timeout=30)
         response.raise_for_status()
 
         data = response.json()
         namespaces = data.get('hosts', [])
 
-        logger.info(f"成功获取服务下的实例列表")
+        logger.info(f"成功查询服务{serviceName}下的端口为{port}的实例信息")
         return namespaces
     
     except requests.exceptions.Timeout:
-        logger.error("请求查询服务下的实例列表超时")
+        logger.error("请求查询服务{serviceName}下的端口为{port}的实例信息超时")
         return {"error": "请求超时"}
     except requests.exceptions.HTTPError as e:
         logger.error(f"HTTP错误：{e.response.status_code} - {e}")
         return {"error": f"HTTP错误: {e.response.status_code}"}
     except requests.exceptions.RequestException as e:
-        logger.error(f"请求查询服务下的实例列表失败：{e}")
+        logger.error(f"请求查询服务{serviceName}下的端口为{port}的实例信息失败：{e}")
         return {"error": "网络请求失败"}
     except ValueError as e:
-        logger.error(f"查询服务下的实例列表JSON解析失败：{e}")
+        logger.error(f"查询服务{serviceName}下的端口为{port}的实例信息JSON解析失败：{e}")
         return {"error": "响应格式错误"}
     except Exception as e:
-        logger.error(f"查询服务下的实例列表未预期错误：{e}")
+        logger.error(f"查询服务{serviceName}下的端口为{port}的实例信息未预期错误：{e}")
         return {"error": "服务内部错误"}
     
 
