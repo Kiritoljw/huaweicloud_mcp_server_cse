@@ -64,10 +64,40 @@ Cover all apis, use as needed, the list and status are as follows:
                     <td>To be tested</td>
                 </tr>
                 <tr>
-                    <td rowspan="4">nacos</td>
+                    <td rowspan="10">nacos</td>
+                    <td>Register instance</td>
+                    <td>注册实例。</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Deregister instance</td>
+                    <td>注销实例</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Modify instance</td>
+                    <td>修改实例</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Query instances</td>
+                    <td>查询实例列表</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Send instance beat</td>
+                    <td>发送实例心跳</td>
+                    <td>To be tested</td>
+                </tr>
+                <tr>
+                    <td>Query instance detail</td>
+                    <td>查询实例详情</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
                     <td>ListNacosNamespaces</td>
                     <td>查询nacos命名空间。</td>
-                    <td>To be tested</td>
+                    <td>Done</td>
                 </tr>
                 <tr>
                     <td>DeleteNacosNamespaces</td>
