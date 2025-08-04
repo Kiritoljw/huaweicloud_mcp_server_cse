@@ -1,0 +1,613 @@
+2025-07-23 15:23:44,254 - INFO - Processing request of type ListToolsRequest
+2025-07-23 15:23:44,260 - INFO - Processing request of type PingRequest
+2025-07-23 15:23:44,262 - INFO - Processing request of type ListPromptsRequest
+2025-07-23 15:23:44,279 - INFO - Processing request of type PingRequest
+2025-07-23 15:23:44,283 - INFO - Processing request of type ListResourcesRequest
+2025-07-23 15:24:31,306 - INFO - Processing request of type PingRequest
+2025-07-23 15:24:31,308 - INFO - Processing request of type ListToolsRequest
+2025-07-23 15:24:45,443 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-23 15:24:45,453 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-23 15:24:45,475 - INFO - Processing request of type ListPromptsRequest
+2025-07-23 15:24:45,478 - INFO - Processing request of type ListResourcesRequest
+2025-07-23 15:24:45,481 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-23 15:24:45,482 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-23 15:24:45,503 - INFO - Processing request of type ListResourcesRequest
+2025-07-23 15:24:45,503 - INFO - Processing request of type ListPromptsRequest
+2025-07-23 15:25:05,139 - INFO - Processing request of type PingRequest
+2025-07-23 15:25:05,140 - INFO - Processing request of type PingRequest
+2025-07-23 15:25:05,140 - INFO - Processing request of type PingRequest
+2025-07-23 15:25:05,143 - INFO - Processing request of type ListToolsRequest
+2025-07-23 15:25:05,145 - INFO - Processing request of type ListToolsRequest
+2025-07-23 15:25:05,146 - INFO - Processing request of type ListToolsRequest
+2025-07-23 15:25:22,522 - INFO - Processing request of type PingRequest
+2025-07-23 15:25:22,524 - INFO - Processing request of type CallToolRequest
+2025-07-23 15:25:22,524 - INFO - 正在查询微服务引擎列表
+2025-07-23 15:25:32,552 - ERROR - 请求微服务引擎列表失败：HTTPSConnectionPool(host='cse.cn-north-7.myhuaweicloud.com', port=443): Max retries exceeded with url: /v2/79c4086f5f3a4e34a92601dfc64b1e8c/enginemgr/engines (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 504 Gateway Time-out')))
+2025-07-23 15:25:57,391 - INFO - Processing request of type PingRequest
+2025-07-23 15:25:57,394 - INFO - Processing request of type CallToolRequest
+2025-07-23 15:25:57,394 - INFO - 正在查询微服务引擎列表
+2025-07-23 15:26:07,416 - ERROR - 请求微服务引擎列表失败：HTTPSConnectionPool(host='cse.cn-north-7.myhuaweicloud.com', port=443): Max retries exceeded with url: /v2/79c4086f5f3a4e34a92601dfc64b1e8c/enginemgr/engines (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 504 Gateway Time-out')))
+2025-07-23 15:26:07,418 - INFO - Processing request of type PingRequest
+2025-07-23 15:26:07,418 - INFO - Processing request of type CallToolRequest
+2025-07-23 15:26:07,418 - INFO - 正在查询微服务引擎列表
+2025-07-23 15:26:17,430 - ERROR - 请求微服务引擎列表失败：HTTPSConnectionPool(host='cse.cn-north-7.myhuaweicloud.com', port=443): Max retries exceeded with url: /v2/79c4086f5f3a4e34a92601dfc64b1e8c/enginemgr/engines (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 504 Gateway Time-out')))
+2025-07-23 17:09:47,733 - INFO - Processing request of type ListPromptsRequest
+2025-07-23 17:09:47,775 - INFO - Processing request of type PingRequest
+2025-07-23 17:09:47,778 - INFO - Processing request of type ListResourcesRequest
+2025-07-25 10:47:01,320 - INFO - Processing request of type ListPromptsRequest
+2025-07-25 10:47:01,362 - INFO - Processing request of type PingRequest
+2025-07-25 10:47:01,367 - INFO - Processing request of type ListResourcesRequest
+2025-07-25 11:43:38,915 - INFO - Processing request of type ListToolsRequest
+2025-07-25 11:43:38,919 - INFO - Processing request of type PingRequest
+2025-07-25 11:43:38,923 - INFO - Processing request of type ListPromptsRequest
+2025-07-25 11:43:38,935 - INFO - Processing request of type PingRequest
+2025-07-25 11:43:38,938 - INFO - Processing request of type ListResourcesRequest
+2025-07-25 11:43:38,944 - INFO - Processing request of type PingRequest
+2025-07-25 11:43:38,961 - INFO - Processing request of type PingRequest
+2025-07-25 11:43:44,244 - INFO - Processing request of type ListPromptsRequest
+2025-07-25 11:43:44,244 - INFO - Processing request of type ListResourcesRequest
+2025-07-25 11:43:56,769 - INFO - Processing request of type PingRequest
+2025-07-25 11:43:56,775 - INFO - Processing request of type ListToolsRequest
+2025-07-25 11:43:56,780 - INFO - Processing request of type ListToolsRequest
+2025-07-25 11:44:10,386 - INFO - Processing request of type PingRequest
+2025-07-25 11:44:10,389 - INFO - Processing request of type CallToolRequest
+2025-07-25 11:44:10,393 - INFO - 正在查询微服务引擎列表
+2025-07-25 11:44:20,424 - ERROR - 请求微服务引擎列表失败：HTTPSConnectionPool(host='cse.cn-north-7.myhuaweicloud.com', port=443): Max retries exceeded with url: /v2/79c4086f5f3a4e34a92601dfc64b1e8c/enginemgr/engines (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 504 Gateway Time-out')))
+2025-07-25 11:45:13,310 - INFO - Processing request of type PingRequest
+2025-07-25 11:45:13,313 - INFO - Processing request of type CallToolRequest
+2025-07-25 11:45:13,313 - INFO - 正在查询微服务引擎列表
+2025-07-25 11:45:23,326 - ERROR - 请求微服务引擎列表失败：HTTPSConnectionPool(host='cse.cn-north-7.myhuaweicloud.com', port=443): Max retries exceeded with url: /v2/79c4086f5f3a4e34a92601dfc64b1e8c/enginemgr/engines (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 504 Gateway Time-out')))
+2025-07-25 11:56:02,720 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-25 11:56:02,738 - INFO - Processing request of type ListToolsRequest
+2025-07-25 11:56:08,684 - INFO - Processing request of type PingRequest
+2025-07-25 11:56:08,686 - INFO - Processing request of type CallToolRequest
+2025-07-25 11:56:08,687 - INFO - 正在查询微服务引擎列表
+2025-07-25 11:56:18,706 - ERROR - 请求微服务引擎列表失败：HTTPSConnectionPool(host='cse.cn-north-7.myhuaweicloud.com', port=443): Max retries exceeded with url: /v2/79c4086f5f3a4e34a92601dfc64b1e8c/enginemgr/engines (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 504 Gateway Time-out')))
+2025-07-25 11:59:40,400 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-25 11:59:40,415 - INFO - Processing request of type CallToolRequest
+2025-07-25 11:59:40,416 - INFO - 正在查询微服务引擎列表
+2025-07-25 11:59:40,635 - ERROR - HTTP错误：401 - 401 Client Error: Unauthorized for url: https://cse.cn-north-7.myhuaweicloud.com/v2/79c4086f5f3a4e34a92601dfc64b1e8c/enginemgr/engines
+2025-07-25 11:59:40,635 - INFO - Warning: InsecureRequestWarning: Unverified HTTPS request is being made to host 'cse.cn-north-7.myhuaweicloud.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2025-07-25 11:59:43,896 - INFO - Processing request of type PingRequest
+2025-07-25 11:59:43,899 - INFO - Processing request of type CallToolRequest
+2025-07-25 11:59:43,900 - INFO - 正在查询微服务引擎列表
+2025-07-25 11:59:44,125 - ERROR - HTTP错误：401 - 401 Client Error: Unauthorized for url: https://cse.cn-north-7.myhuaweicloud.com/v2/79c4086f5f3a4e34a92601dfc64b1e8c/enginemgr/engines
+2025-07-25 11:59:44,126 - INFO - Warning: InsecureRequestWarning: Unverified HTTPS request is being made to host 'cse.cn-north-7.myhuaweicloud.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2025-07-25 14:38:22,765 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 14:42:04,763 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 14:42:20,107 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-25 14:42:20,111 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-25 14:42:20,111 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-25 14:42:21,727 - INFO - Processing request of type PingRequest
+2025-07-25 14:42:21,728 - INFO - Processing request of type PingRequest
+2025-07-25 14:42:21,728 - INFO - Processing request of type PingRequest
+2025-07-25 14:42:21,728 - INFO - Processing request of type PingRequest
+2025-07-25 14:42:21,730 - INFO - Processing request of type ListToolsRequest
+2025-07-25 14:42:21,731 - INFO - Processing request of type ListPromptsRequest
+2025-07-25 14:42:21,731 - INFO - Processing request of type ListResourcesRequest
+2025-07-25 14:42:24,331 - INFO - Processing request of type PingRequest
+2025-07-25 14:42:24,332 - INFO - Processing request of type PingRequest
+2025-07-25 14:42:24,332 - INFO - Processing request of type PingRequest
+2025-07-25 14:42:25,138 - INFO - Processing request of type PingRequest
+2025-07-25 14:42:25,139 - INFO - Processing request of type PingRequest
+2025-07-25 14:42:25,143 - INFO - Processing request of type ListPromptsRequest
+2025-07-25 14:42:25,144 - INFO - Processing request of type ListResourcesRequest
+2025-07-25 14:42:25,153 - INFO - Processing request of type PingRequest
+2025-07-25 14:42:25,154 - INFO - Processing request of type PingRequest
+2025-07-25 14:42:25,157 - INFO - Processing request of type ListPromptsRequest
+2025-07-25 14:42:25,158 - INFO - Processing request of type ListResourcesRequest
+2025-07-25 14:43:04,558 - INFO - Processing request of type PingRequest
+2025-07-25 14:43:04,560 - INFO - Processing request of type CallToolRequest
+2025-07-25 14:43:04,560 - INFO - 正在查询微服务引擎列表
+2025-07-25 14:43:14,576 - ERROR - 请求微服务引擎列表失败：HTTPSConnectionPool(host='cse.cn-north-7.myhuaweicloud.com', port=443): Max retries exceeded with url: /v2/79c4086f5f3a4e34a92601dfc64b1e8c/enginemgr/engines (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 504 Gateway Time-out')))
+2025-07-25 14:43:25,300 - INFO - Processing request of type PingRequest
+2025-07-25 14:43:25,302 - INFO - Processing request of type CallToolRequest
+2025-07-25 14:43:25,303 - INFO - 正在查询微服务引擎列表
+2025-07-25 14:43:35,315 - ERROR - 请求微服务引擎列表失败：HTTPSConnectionPool(host='cse.cn-north-7.myhuaweicloud.com', port=443): Max retries exceeded with url: /v2/79c4086f5f3a4e34a92601dfc64b1e8c/enginemgr/engines (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 504 Gateway Time-out')))
+2025-07-25 14:58:20,398 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 14:58:33,668 - INFO - Processing request of type ListToolsRequest
+2025-07-25 14:58:45,651 - INFO - Processing request of type PingRequest
+2025-07-25 14:58:45,660 - INFO - Processing request of type CallToolRequest
+2025-07-25 14:58:45,661 - INFO - 正在查询微服务引擎列表
+2025-07-25 14:58:55,677 - ERROR - 请求微服务引擎列表失败：HTTPSConnectionPool(host='cse.cn-north-7.myhuaweicloud.com', port=443): Max retries exceeded with url: /v2/79c4086f5f3a4e34a92601dfc64b1e8c/enginemgr/engines (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 504 Gateway Time-out')))
+2025-07-25 15:07:29,655 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 15:07:29,655 - INFO - 正在查询微服务引擎列表
+2025-07-25 15:18:31,168 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 15:18:31,168 - INFO - 正在查询微服务引擎列表
+2025-07-25 15:24:47,656 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 15:24:47,657 - INFO - 正在查询微服务引擎列表
+2025-07-25 15:27:21,130 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 15:27:21,130 - INFO - 正在查询微服务引擎列表
+2025-07-25 15:39:13,873 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 15:39:13,874 - INFO - 正在查询微服务引擎列表
+2025-07-25 15:40:31,692 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 15:40:31,693 - INFO - 正在查询微服务引擎列表
+2025-07-25 15:40:55,575 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 15:40:55,575 - INFO - 正在查询微服务引擎列表
+2025-07-25 15:44:48,615 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 15:44:48,615 - INFO - 正在查询微服务引擎列表
+2025-07-25 16:03:01,612 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 16:03:01,613 - INFO - 正在查询微服务引擎列表
+2025-07-25 16:03:24,945 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 16:03:24,945 - INFO - 正在查询微服务引擎列表
+2025-07-25 16:03:51,603 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 16:03:51,603 - INFO - 正在查询微服务引擎列表
+2025-07-25 16:04:49,871 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 16:04:49,871 - INFO - 正在查询微服务引擎列表
+2025-07-25 16:05:22,726 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 16:05:22,727 - INFO - 正在查询微服务引擎列表
+2025-07-25 16:07:14,664 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 16:07:14,664 - INFO - 正在查询微服务引擎列表
+2025-07-25 16:08:01,935 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 16:08:01,935 - INFO - 正在查询微服务引擎列表
+2025-07-25 16:09:10,194 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 16:09:10,194 - INFO - 正在查询微服务引擎列表
+2025-07-25 16:09:49,242 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 16:09:49,242 - INFO - 正在查询微服务引擎列表
+2025-07-25 16:11:09,308 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 16:11:09,308 - INFO - 正在查询微服务引擎列表
+2025-07-25 16:11:09,623 - INFO - 成功获取 3 个微服务引擎
+2025-07-25 16:36:35,543 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 16:36:35,544 - INFO - 正在查询微服务引擎列表
+2025-07-25 16:36:35,978 - INFO - 成功获取 3 个微服务引擎
+2025-07-25 17:11:38,240 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-25 17:11:38,257 - INFO - Processing request of type ListToolsRequest
+2025-07-25 17:11:46,279 - INFO - Processing request of type PingRequest
+2025-07-25 17:11:46,282 - INFO - Processing request of type CallToolRequest
+2025-07-25 17:11:46,283 - INFO - 正在查询微服务引擎列表
+2025-07-25 17:11:46,457 - ERROR - HTTP错误：401 - 401 Client Error: Unauthorized for url: https://cse.cn-north-7.myhuaweicloud.com/v2/79c4086f5f3a4e34a92601dfc64b1e8c/enginemgr/engines
+2025-07-25 17:11:46,458 - INFO - Warning: InsecureRequestWarning: Unverified HTTPS request is being made to host 'cse.cn-north-7.myhuaweicloud.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2025-07-25 17:12:42,600 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 17:12:42,600 - INFO - 正在查询微服务引擎列表
+2025-07-25 17:12:42,810 - INFO - 成功获取 3 个微服务引擎
+2025-07-25 17:13:00,704 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 17:13:00,705 - INFO - 正在查询微服务引擎列表
+2025-07-25 17:13:00,973 - INFO - 成功获取 3 个微服务引擎
+2025-07-25 17:13:22,680 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 17:13:22,680 - INFO - 正在查询微服务引擎列表
+2025-07-25 17:13:22,881 - INFO - 成功获取 3 个微服务引擎
+2025-07-25 17:13:39,159 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-25 17:13:39,172 - INFO - Processing request of type CallToolRequest
+2025-07-25 17:13:39,172 - INFO - 正在查询微服务引擎列表
+2025-07-25 17:13:39,435 - INFO - 成功获取 3 个微服务引擎
+2025-07-25 17:13:39,436 - INFO - Warning: InsecureRequestWarning: Unverified HTTPS request is being made to host 'cse.cn-north-7.myhuaweicloud.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2025-07-25 17:13:46,586 - INFO - Processing request of type PingRequest
+2025-07-25 17:13:46,588 - INFO - Processing request of type CallToolRequest
+2025-07-25 17:13:46,588 - INFO - 正在查询微服务引擎列表
+2025-07-25 17:13:46,841 - INFO - 成功获取 3 个微服务引擎
+2025-07-25 17:13:46,842 - INFO - Warning: InsecureRequestWarning: Unverified HTTPS request is being made to host 'cse.cn-north-7.myhuaweicloud.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2025-07-25 17:21:13,556 - INFO - Processing request of type PingRequest
+2025-07-25 17:21:15,817 - INFO - Processing request of type PingRequest
+2025-07-25 17:21:15,819 - INFO - Processing request of type PingRequest
+2025-07-25 17:21:15,821 - INFO - Processing request of type PingRequest
+2025-07-25 17:21:15,821 - INFO - Processing request of type PingRequest
+2025-07-25 17:21:15,823 - INFO - Processing request of type ListToolsRequest
+2025-07-25 17:21:15,824 - INFO - Processing request of type ListPromptsRequest
+2025-07-25 17:21:15,824 - INFO - Processing request of type ListResourcesRequest
+2025-07-25 17:21:20,201 - INFO - Processing request of type PingRequest
+2025-07-25 17:21:20,201 - INFO - Processing request of type PingRequest
+2025-07-25 17:21:20,201 - INFO - Processing request of type PingRequest
+2025-07-25 17:21:21,429 - INFO - Processing request of type PingRequest
+2025-07-25 17:21:21,430 - INFO - Processing request of type PingRequest
+2025-07-25 17:21:21,430 - INFO - Processing request of type PingRequest
+2025-07-25 17:21:21,431 - INFO - Processing request of type PingRequest
+2025-07-25 17:21:21,433 - INFO - Processing request of type ListToolsRequest
+2025-07-25 17:21:21,433 - INFO - Processing request of type ListPromptsRequest
+2025-07-25 17:21:21,434 - INFO - Processing request of type ListResourcesRequest
+2025-07-25 17:21:23,542 - INFO - Processing request of type PingRequest
+2025-07-25 17:21:23,542 - INFO - Processing request of type PingRequest
+2025-07-25 17:21:23,543 - INFO - Processing request of type PingRequest
+2025-07-25 17:21:25,041 - INFO - Processing request of type PingRequest
+2025-07-25 17:21:25,042 - INFO - Processing request of type ListPromptsRequest
+2025-07-25 17:21:25,076 - INFO - Processing request of type PingRequest
+2025-07-25 17:21:25,078 - INFO - Processing request of type ListResourcesRequest
+2025-07-25 17:26:24,305 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 17:26:24,306 - INFO - 正在查询微服务引擎列表
+2025-07-25 17:26:24,663 - INFO - 成功获取 3 个微服务引擎
+2025-07-25 17:32:55,881 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-25 17:32:55,882 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-25 17:32:55,883 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-25 17:32:55,911 - INFO - Processing request of type ListToolsRequest
+2025-07-25 17:32:55,911 - INFO - Processing request of type ListToolsRequest
+2025-07-25 17:32:55,911 - INFO - Processing request of type ListToolsRequest
+2025-07-25 17:33:06,162 - INFO - Processing request of type PingRequest
+2025-07-25 17:33:06,164 - INFO - Processing request of type CallToolRequest
+2025-07-25 17:33:06,164 - INFO - 正在查询微服务引擎列表
+2025-07-25 17:33:06,450 - INFO - 成功获取 3 个微服务引擎
+2025-07-25 17:33:06,451 - INFO - Warning: InsecureRequestWarning: Unverified HTTPS request is being made to host 'cse.cn-north-7.myhuaweicloud.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2025-07-25 17:47:12,494 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-25 17:47:12,494 - INFO - 正在查询微服务引擎列表
+2025-07-25 17:47:15,447 - INFO - 成功获取 3 个微服务引擎
+2025-07-25 17:47:48,632 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-25 17:47:48,634 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-25 17:47:48,635 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-25 17:47:48,671 - INFO - Processing request of type ListToolsRequest
+2025-07-25 17:47:48,677 - INFO - Processing request of type ListToolsRequest
+2025-07-25 17:47:48,678 - INFO - Processing request of type ListToolsRequest
+2025-07-25 17:47:58,855 - INFO - Processing request of type PingRequest
+2025-07-25 17:47:58,857 - INFO - Processing request of type CallToolRequest
+2025-07-25 17:47:58,858 - INFO - 正在查询微服务引擎列表
+2025-07-25 17:47:59,060 - INFO - 成功获取 3 个微服务引擎
+2025-07-25 17:47:59,061 - INFO - Warning: InsecureRequestWarning: Unverified HTTPS request is being made to host 'cse.cn-north-7.myhuaweicloud.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2025-07-29 16:10:13,196 - INFO - Processing request of type ListPromptsRequest
+2025-07-29 16:10:13,254 - INFO - Processing request of type PingRequest
+2025-07-29 16:10:13,256 - INFO - Processing request of type ListResourcesRequest
+2025-07-29 16:10:13,338 - INFO - Processing request of type ListPromptsRequest
+2025-07-29 16:10:13,339 - INFO - Processing request of type ListResourcesRequest
+2025-07-29 16:10:13,363 - INFO - Processing request of type ListPromptsRequest
+2025-07-29 16:10:13,366 - INFO - Processing request of type ListResourcesRequest
+2025-07-29 16:10:26,765 - INFO - Processing request of type PingRequest
+2025-07-29 16:10:26,766 - INFO - Processing request of type PingRequest
+2025-07-29 16:10:26,766 - INFO - Processing request of type PingRequest
+2025-07-29 16:10:32,300 - INFO - Processing request of type PingRequest
+2025-07-29 16:10:32,300 - INFO - Processing request of type PingRequest
+2025-07-29 16:10:32,302 - INFO - Processing request of type ListToolsRequest
+2025-07-29 16:10:42,519 - INFO - Processing request of type PingRequest
+2025-07-29 16:10:42,520 - INFO - Processing request of type PingRequest
+2025-07-29 16:10:42,520 - INFO - Processing request of type PingRequest
+2025-07-29 16:10:50,753 - INFO - Processing request of type PingRequest
+2025-07-29 16:10:51,701 - INFO - Processing request of type PingRequest
+2025-07-29 16:10:51,704 - INFO - Processing request of type PingRequest
+2025-07-29 16:10:51,704 - INFO - Processing request of type PingRequest
+2025-07-29 16:10:52,720 - INFO - Processing request of type PingRequest
+2025-07-29 16:11:29,087 - INFO - Processing request of type PingRequest
+2025-07-29 16:11:29,091 - INFO - Processing request of type PingRequest
+2025-07-29 16:11:29,091 - INFO - Processing request of type PingRequest
+2025-07-29 16:11:31,125 - INFO - Processing request of type PingRequest
+2025-07-29 16:11:31,126 - INFO - Processing request of type PingRequest
+2025-07-29 16:11:31,127 - INFO - Processing request of type PingRequest
+2025-07-29 16:11:31,127 - INFO - Processing request of type PingRequest
+2025-07-29 16:11:31,129 - INFO - Processing request of type ListToolsRequest
+2025-07-29 16:11:31,130 - INFO - Processing request of type ListPromptsRequest
+2025-07-29 16:11:31,130 - INFO - Processing request of type ListResourcesRequest
+2025-07-29 16:11:57,794 - INFO - Processing request of type PingRequest
+2025-07-29 16:11:57,795 - INFO - Processing request of type PingRequest
+2025-07-29 16:11:57,798 - INFO - Processing request of type ListToolsRequest
+2025-07-29 16:11:57,798 - INFO - Processing request of type ListToolsRequest
+2025-07-29 16:12:28,764 - INFO - Processing request of type PingRequest
+2025-07-29 16:12:28,767 - INFO - Processing request of type CallToolRequest
+2025-07-29 16:12:28,767 - INFO - 正在查询Nacos的命名空间列表
+2025-07-29 16:12:28,866 - INFO - 成功获取 3 个命名空间列表
+2025-07-30 17:19:58,723 - INFO - Processing request of type ListPromptsRequest
+2025-07-30 17:19:58,786 - INFO - Processing request of type PingRequest
+2025-07-30 17:19:58,788 - INFO - Processing request of type ListResourcesRequest
+2025-07-30 17:19:58,861 - INFO - Processing request of type ListPromptsRequest
+2025-07-30 17:19:58,861 - INFO - Processing request of type ListResourcesRequest
+2025-07-30 17:19:58,877 - INFO - Processing request of type ListPromptsRequest
+2025-07-30 17:19:58,878 - INFO - Processing request of type ListResourcesRequest
+2025-07-30 17:20:04,081 - INFO - Processing request of type PingRequest
+2025-07-30 17:20:04,081 - INFO - Processing request of type PingRequest
+2025-07-30 17:20:04,082 - INFO - Processing request of type PingRequest
+2025-07-30 17:20:05,129 - INFO - Processing request of type PingRequest
+2025-07-30 17:20:05,130 - INFO - Processing request of type PingRequest
+2025-07-30 17:20:05,132 - INFO - Processing request of type ListToolsRequest
+2025-07-30 17:21:40,331 - INFO - Processing request of type PingRequest
+2025-07-30 17:21:40,334 - INFO - Processing request of type CallToolRequest
+2025-07-30 17:21:40,335 - INFO - 正在创建服务
+2025-07-30 17:21:40,446 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service
+2025-07-30 17:22:36,816 - INFO - Processing request of type PingRequest
+2025-07-30 17:22:36,818 - INFO - Processing request of type CallToolRequest
+2025-07-30 17:22:36,819 - INFO - 正在查询服务详细信息
+2025-07-30 17:22:36,891 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service
+2025-07-30 17:22:42,306 - INFO - Processing request of type PingRequest
+2025-07-30 17:22:42,308 - INFO - Processing request of type CallToolRequest
+2025-07-30 17:22:42,308 - INFO - 正在查询Nacos的命名空间列表
+2025-07-30 17:22:42,385 - INFO - 成功获取 3 个命名空间列表
+2025-07-30 17:22:52,433 - INFO - Processing request of type PingRequest
+2025-07-30 17:22:52,435 - INFO - Processing request of type CallToolRequest
+2025-07-30 17:22:52,436 - INFO - 正在创建服务
+2025-07-30 17:22:52,511 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service
+2025-07-30 17:24:04,491 - INFO - Processing request of type PingRequest
+2025-07-30 17:24:04,492 - INFO - Processing request of type PingRequest
+2025-07-30 17:24:04,492 - INFO - Processing request of type PingRequest
+2025-07-30 17:24:07,961 - INFO - Processing request of type PingRequest
+2025-07-30 17:24:15,029 - INFO - Processing request of type PingRequest
+2025-07-30 17:24:15,030 - INFO - Processing request of type PingRequest
+2025-07-30 17:24:15,030 - INFO - Processing request of type PingRequest
+2025-07-30 17:25:13,167 - INFO - Processing request of type PingRequest
+2025-07-30 17:25:13,170 - INFO - Processing request of type ListToolsRequest
+2025-07-30 17:25:26,102 - INFO - Processing request of type PingRequest
+2025-07-30 17:25:26,105 - INFO - Processing request of type CallToolRequest
+2025-07-30 17:25:26,105 - INFO - 正在查询服务列表
+2025-07-30 17:25:26,180 - ERROR - HTTP错误：400 - 400 Client Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service/list
+2025-07-30 17:30:10,378 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-30 17:30:10,378 - INFO - 正在查询服务列表
+2025-07-30 17:30:40,337 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-30 17:30:40,338 - INFO - 正在查询服务列表
+2025-07-30 17:38:34,333 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-30 17:38:34,333 - INFO - 正在查询服务列表
+2025-07-30 17:38:34,411 - INFO - 成功查询服务列表信息
+2025-07-30 17:40:28,215 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-30 17:40:28,215 - INFO - 正在查询服务列表
+2025-07-30 17:40:28,287 - INFO - 成功查询服务列表信息
+2025-07-30 17:42:23,137 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-30 17:42:23,137 - INFO - 正在查询服务列表
+2025-07-30 17:42:23,216 - INFO - 成功查询服务列表信息
+2025-07-30 17:42:58,632 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-30 17:42:58,632 - INFO - 正在查询服务列表
+2025-07-30 17:42:58,733 - INFO - 成功查询服务列表信息
+2025-07-30 17:55:01,972 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-30 17:55:01,972 - INFO - 正在查询服务列表
+2025-07-30 17:55:02,054 - INFO - 成功查询服务列表信息
+2025-07-31 14:26:37,738 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-31 14:26:37,738 - INFO - 正在查询服务列表
+2025-07-31 14:26:37,813 - INFO - 成功查询服务列表信息
+2025-07-31 15:56:38,229 - INFO - Processing request of type ListPromptsRequest
+2025-07-31 15:56:38,280 - INFO - Processing request of type PingRequest
+2025-07-31 15:56:38,283 - INFO - Processing request of type ListResourcesRequest
+2025-07-31 15:56:38,371 - INFO - Processing request of type ListPromptsRequest
+2025-07-31 15:56:38,372 - INFO - Processing request of type ListResourcesRequest
+2025-07-31 15:56:38,386 - INFO - Processing request of type ListPromptsRequest
+2025-07-31 15:56:38,387 - INFO - Processing request of type ListResourcesRequest
+2025-07-31 15:57:28,079 - INFO - Processing request of type PingRequest
+2025-07-31 15:57:28,082 - INFO - Processing request of type ListToolsRequest
+2025-07-31 15:58:42,661 - INFO - Processing request of type PingRequest
+2025-07-31 15:58:42,665 - INFO - Processing request of type CallToolRequest
+2025-07-31 15:58:42,665 - INFO - 正在查询服务列表
+2025-07-31 15:58:42,759 - INFO - 共有0个服务
+2025-07-31 16:01:36,429 - INFO - Processing request of type PingRequest
+2025-07-31 16:01:36,431 - INFO - Processing request of type CallToolRequest
+2025-07-31 16:01:36,432 - INFO - 正在创建服务
+2025-07-31 16:01:36,510 - ERROR - 创建服务失败：Expecting value: line 1 column 1 (char 0)
+2025-07-31 16:01:38,647 - INFO - Processing request of type PingRequest
+2025-07-31 16:01:38,657 - INFO - Processing request of type CallToolRequest
+2025-07-31 16:01:38,660 - INFO - 正在查询服务列表
+2025-07-31 16:01:38,733 - INFO - 共有1个服务
+2025-07-31 16:03:16,701 - INFO - Processing request of type PingRequest
+2025-07-31 16:03:16,704 - INFO - Processing request of type ListToolsRequest
+2025-07-31 16:03:55,723 - INFO - Processing request of type PingRequest
+2025-07-31 16:03:55,725 - INFO - Processing request of type CallToolRequest
+2025-07-31 16:03:55,725 - INFO - 正在删除服务
+2025-07-31 16:03:55,799 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=ltest
+2025-07-31 16:03:58,504 - INFO - Processing request of type PingRequest
+2025-07-31 16:03:58,507 - INFO - Processing request of type CallToolRequest
+2025-07-31 16:03:58,509 - INFO - 正在查询服务列表
+2025-07-31 16:03:58,583 - INFO - 共有0个服务
+2025-07-31 16:04:03,040 - INFO - Processing request of type PingRequest
+2025-07-31 16:04:03,042 - INFO - Processing request of type CallToolRequest
+2025-07-31 16:04:03,043 - INFO - 正在删除服务
+2025-07-31 16:04:03,117 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=ltest
+2025-07-31 16:04:04,896 - INFO - Processing request of type PingRequest
+2025-07-31 16:04:04,905 - INFO - Processing request of type CallToolRequest
+2025-07-31 16:04:04,905 - INFO - 正在查询服务列表
+2025-07-31 16:04:04,978 - INFO - 共有0个服务
+2025-07-31 16:43:41,117 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-31 16:43:41,118 - INFO - 正在创建服务
+2025-07-31 16:48:56,084 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-31 16:48:56,084 - INFO - 正在创建服务
+2025-07-31 16:48:56,180 - INFO - 成功创建服务
+2025-07-31 16:48:56,181 - INFO - 正在查询服务列表
+2025-07-31 16:48:56,252 - INFO - 成功查询服务列表信息
+2025-07-31 16:51:35,352 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-31 16:51:35,352 - INFO - 正在创建服务
+2025-07-31 16:51:35,431 - INFO - 成功创建服务
+2025-07-31 16:51:35,432 - INFO - 正在查询服务列表
+2025-07-31 16:51:35,505 - INFO - 成功查询服务列表信息
+2025-07-31 17:07:40,127 - INFO - 域名解析结果: cse.cn-north-7.myhuaweicloud.com -> 100.95.181.191
+2025-07-31 17:07:40,127 - INFO - 正在创建服务
+2025-07-31 17:07:40,207 - INFO - 成功创建服务
+2025-07-31 17:07:40,207 - INFO - 成功创建服务
+2025-07-31 17:07:40,207 - INFO - 正在查询服务列表
+2025-07-31 17:07:40,279 - INFO - 成功查询服务列表信息
+2025-07-31 17:08:49,907 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-31 17:08:49,922 - INFO - Processing request of type ListToolsRequest
+2025-07-31 17:09:17,276 - INFO - Processing request of type PingRequest
+2025-07-31 17:09:17,278 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:09:17,279 - INFO - 正在创建服务
+2025-07-31 17:09:17,365 - INFO - 成功创建服务
+2025-07-31 17:09:19,196 - INFO - Processing request of type PingRequest
+2025-07-31 17:09:19,198 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:09:19,198 - INFO - 正在查询服务列表
+2025-07-31 17:09:19,271 - INFO - 查询成功，共有2个服务
+2025-07-31 17:10:09,887 - INFO - Processing request of type PingRequest
+2025-07-31 17:10:09,889 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:10:09,890 - INFO - 正在删除服务
+2025-07-31 17:10:09,967 - INFO - 成功创建服务
+2025-07-31 17:10:12,792 - INFO - Processing request of type PingRequest
+2025-07-31 17:10:12,794 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:10:12,794 - INFO - 正在查询服务列表
+2025-07-31 17:10:12,866 - INFO - 查询成功，共有0个服务
+2025-07-31 17:10:18,415 - INFO - Processing request of type PingRequest
+2025-07-31 17:10:18,418 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:10:18,419 - INFO - 正在删除服务
+2025-07-31 17:10:18,493 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=qps
+2025-07-31 17:10:20,256 - INFO - Processing request of type PingRequest
+2025-07-31 17:10:20,259 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:10:20,260 - INFO - 正在查询服务列表
+2025-07-31 17:10:20,333 - INFO - 查询成功，共有0个服务
+2025-07-31 17:13:45,123 - INFO - Processing request of type PingRequest
+2025-07-31 17:13:45,124 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:13:45,125 - INFO - 正在创建服务
+2025-07-31 17:13:45,227 - INFO - 成功创建服务
+2025-07-31 17:13:50,256 - INFO - Processing request of type PingRequest
+2025-07-31 17:13:50,259 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:13:50,259 - INFO - 正在查询服务下的实例列表
+2025-07-31 17:13:50,348 - ERROR - HTTP错误：400 - 400 Client Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance/list
+2025-07-31 17:14:41,946 - INFO - Processing request of type PingRequest
+2025-07-31 17:14:41,949 - INFO - Processing request of type ListToolsRequest
+2025-07-31 17:16:20,671 - INFO - Processing request of type PingRequest
+2025-07-31 17:16:20,674 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:16:20,674 - INFO - 正在创建服务
+2025-07-31 17:16:20,761 - INFO - 成功创建服务
+2025-07-31 17:16:25,024 - INFO - Processing request of type PingRequest
+2025-07-31 17:16:25,027 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:16:25,027 - INFO - 正在查询服务详细信息
+2025-07-31 17:16:25,113 - INFO - 成功查询服务信息
+2025-07-31 17:17:43,041 - INFO - Processing request of type PingRequest
+2025-07-31 17:17:43,043 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:17:43,043 - INFO - 正在查询服务详细信息
+2025-07-31 17:17:43,115 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=hjhj
+2025-07-31 17:17:45,059 - INFO - Processing request of type PingRequest
+2025-07-31 17:17:45,066 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:17:45,066 - INFO - 正在查询Nacos的命名空间列表
+2025-07-31 17:17:45,166 - INFO - 成功获取 3 个命名空间列表
+2025-07-31 17:19:12,305 - INFO - Processing request of type PingRequest
+2025-07-31 17:19:12,307 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:19:12,307 - INFO - 正在删除服务
+2025-07-31 17:19:12,379 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=hjhj
+2025-07-31 17:19:15,020 - INFO - Processing request of type PingRequest
+2025-07-31 17:19:15,033 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:19:15,034 - INFO - 正在创建服务
+2025-07-31 17:19:15,111 - INFO - 成功创建服务
+2025-07-31 17:19:20,632 - INFO - Processing request of type PingRequest
+2025-07-31 17:19:20,644 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:19:20,644 - INFO - 正在查询服务列表
+2025-07-31 17:19:20,729 - INFO - 查询成功，共有1个服务
+2025-07-31 17:19:26,869 - INFO - Processing request of type PingRequest
+2025-07-31 17:19:26,872 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:19:26,872 - INFO - 正在查询服务详细信息
+2025-07-31 17:19:26,966 - INFO - 成功查询服务信息
+2025-07-31 17:19:41,407 - INFO - Processing request of type PingRequest
+2025-07-31 17:19:41,409 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:19:41,409 - INFO - 正在注册实例到服务
+2025-07-31 17:19:41,497 - ERROR - HTTP错误：400 - 400 Client Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance
+2025-07-31 17:19:44,988 - INFO - Processing request of type PingRequest
+2025-07-31 17:19:44,991 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:19:44,992 - INFO - 正在查询服务下的实例列表
+2025-07-31 17:19:45,064 - ERROR - HTTP错误：400 - 400 Client Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance/list
+2025-07-31 17:20:13,191 - INFO - Processing request of type PingRequest
+2025-07-31 17:20:13,193 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:20:13,193 - INFO - 正在注册实例到服务
+2025-07-31 17:20:13,265 - ERROR - HTTP错误：400 - 400 Client Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance
+2025-07-31 17:20:48,096 - INFO - Processing request of type PingRequest
+2025-07-31 17:20:48,099 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:20:48,100 - INFO - 正在注册实例到服务
+2025-07-31 17:20:48,172 - ERROR - HTTP错误：400 - 400 Client Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance
+2025-07-31 17:20:57,836 - INFO - Processing request of type PingRequest
+2025-07-31 17:20:57,838 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:20:57,838 - INFO - 正在查询服务下的实例列表
+2025-07-31 17:20:57,924 - ERROR - HTTP错误：400 - 400 Client Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance/list
+2025-07-31 17:22:45,021 - INFO - Processing request of type PingRequest
+2025-07-31 17:22:45,024 - WARNING - Failed to validate request: 23 validation errors for ClientRequest
+PingRequest.method
+  Input should be 'ping' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+InitializeRequest.method
+  Input should be 'initialize' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+InitializeRequest.params.protocolVersion
+  Field required [type=missing, input_value={'name': 'NacosRegisterIn...: {'progressToken': 47}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+InitializeRequest.params.capabilities
+  Field required [type=missing, input_value={'name': 'NacosRegisterIn...: {'progressToken': 47}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+InitializeRequest.params.clientInfo
+  Field required [type=missing, input_value={'name': 'NacosRegisterIn...: {'progressToken': 47}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+CompleteRequest.method
+  Input should be 'completion/complete' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+CompleteRequest.params.ref
+  Field required [type=missing, input_value={'name': 'NacosRegisterIn...: {'progressToken': 47}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+CompleteRequest.params.argument
+  Field required [type=missing, input_value={'name': 'NacosRegisterIn...: {'progressToken': 47}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+SetLevelRequest.method
+  Input should be 'logging/setLevel' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+SetLevelRequest.params.level
+  Field required [type=missing, input_value={'name': 'NacosRegisterIn...: {'progressToken': 47}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+GetPromptRequest.method
+  Input should be 'prompts/get' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+GetPromptRequest.params.arguments
+  Input should be a valid dictionary [type=dict_type, input_value='{\n      "ip": "127.0.0....iceName": "hjhj"\n    }', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/dict_type
+ListPromptsRequest.method
+  Input should be 'prompts/list' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+ListResourcesRequest.method
+  Input should be 'resources/list' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+ListResourceTemplatesRequest.method
+  Input should be 'resources/templates/list' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+ReadResourceRequest.method
+  Input should be 'resources/read' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+ReadResourceRequest.params.uri
+  Field required [type=missing, input_value={'name': 'NacosRegisterIn...: {'progressToken': 47}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+SubscribeRequest.method
+  Input should be 'resources/subscribe' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+SubscribeRequest.params.uri
+  Field required [type=missing, input_value={'name': 'NacosRegisterIn...: {'progressToken': 47}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+UnsubscribeRequest.method
+  Input should be 'resources/unsubscribe' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+UnsubscribeRequest.params.uri
+  Field required [type=missing, input_value={'name': 'NacosRegisterIn...: {'progressToken': 47}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+CallToolRequest.params.arguments
+  Input should be a valid dictionary [type=dict_type, input_value='{\n      "ip": "127.0.0....iceName": "hjhj"\n    }', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/dict_type
+ListToolsRequest.method
+  Input should be 'tools/list' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+2025-07-31 17:22:48,589 - INFO - Processing request of type PingRequest
+2025-07-31 17:22:48,590 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:22:48,590 - INFO - 正在查询服务下的实例列表
+2025-07-31 17:22:48,662 - ERROR - HTTP错误：400 - 400 Client Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance/list
+2025-07-31 17:22:54,610 - INFO - Processing request of type PingRequest
+2025-07-31 17:22:54,612 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:22:54,614 - INFO - 正在删除服务
+2025-07-31 17:22:54,687 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=hjhj
+2025-07-31 17:22:56,363 - INFO - Processing request of type PingRequest
+2025-07-31 17:22:56,366 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:22:56,366 - INFO - 正在创建服务
+2025-07-31 17:22:56,444 - INFO - 成功创建服务
+2025-07-31 17:22:59,483 - INFO - Processing request of type PingRequest
+2025-07-31 17:22:59,490 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:22:59,491 - INFO - 正在注册实例到服务
+2025-07-31 17:22:59,563 - ERROR - HTTP错误：400 - 400 Client Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance
+2025-07-31 17:23:01,853 - INFO - Processing request of type PingRequest
+2025-07-31 17:23:01,855 - INFO - Processing request of type CallToolRequest
+2025-07-31 17:23:01,856 - INFO - 正在查询服务下的实例列表
+2025-07-31 17:23:01,930 - ERROR - HTTP错误：400 - 400 Client Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance/list
+2025-08-01 16:48:52,918 - INFO - Processing request of type ListToolsRequest
+2025-08-01 16:49:39,979 - INFO - Processing request of type PingRequest
+2025-08-01 16:49:39,984 - INFO - Processing request of type ListPromptsRequest
+2025-08-01 16:49:40,037 - INFO - Processing request of type PingRequest
+2025-08-01 16:49:40,039 - INFO - Processing request of type ListResourcesRequest
+2025-08-01 16:49:40,108 - INFO - Processing request of type ListPromptsRequest
+2025-08-01 16:49:40,108 - INFO - Processing request of type ListResourcesRequest
+2025-08-01 16:49:40,121 - INFO - Processing request of type ListPromptsRequest
+2025-08-01 16:49:40,123 - INFO - Processing request of type ListResourcesRequest
+2025-08-01 16:50:39,152 - INFO - Processing request of type PingRequest
+2025-08-01 16:50:39,155 - INFO - Processing request of type CallToolRequest
+2025-08-01 16:50:39,156 - INFO - 正在注册实例到服务
+2025-08-01 16:50:39,248 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance?ip=11.11.11.11&port=8800&serviceName=test&ephemeral=False
+2025-08-01 16:51:38,540 - INFO - Processing request of type PingRequest
+2025-08-01 16:51:38,543 - INFO - Processing request of type CallToolRequest
+2025-08-01 16:51:38,543 - INFO - 正在注册实例到服务
+2025-08-01 16:51:38,619 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance?ip=11.11.11.11&port=8800&serviceName=test&ephemeral=False
+2025-08-01 16:51:48,352 - INFO - Processing request of type PingRequest
+2025-08-01 16:51:48,355 - INFO - Processing request of type CallToolRequest
+2025-08-01 16:51:48,356 - INFO - 正在注册实例到服务
+2025-08-01 16:51:48,429 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance?ip=11.11.11.11&port=8800&serviceName=test&ephemeral=False
+2025-08-01 16:52:43,105 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-01 16:52:43,118 - INFO - Processing request of type CallToolRequest
+2025-08-01 16:52:43,119 - INFO - 正在注册实例到服务
+2025-08-01 16:52:43,224 - INFO - 成功注册实例到服务
+2025-08-01 16:52:48,954 - INFO - Processing request of type PingRequest
+2025-08-01 16:52:48,957 - INFO - Processing request of type ListToolsRequest
+2025-08-01 16:53:09,545 - INFO - Processing request of type PingRequest
+2025-08-01 16:53:09,548 - INFO - Processing request of type CallToolRequest
+2025-08-01 16:53:09,548 - INFO - 正在查询服务列表
+2025-08-01 16:53:09,623 - INFO - 服务列表查询成功，共有2个服务
+2025-08-01 16:53:11,176 - INFO - Processing request of type PingRequest
+2025-08-01 16:53:11,179 - INFO - Processing request of type CallToolRequest
+2025-08-01 16:53:11,179 - INFO - 正在创建服务
+2025-08-01 16:53:11,275 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=test
+2025-08-01 16:53:15,481 - INFO - Processing request of type PingRequest
+2025-08-01 16:53:15,484 - INFO - Processing request of type CallToolRequest
+2025-08-01 16:53:15,484 - INFO - 正在注册实例到服务
+2025-08-01 16:53:15,568 - INFO - 成功注册实例到服务
+2025-08-01 16:53:29,888 - INFO - Processing request of type PingRequest
+2025-08-01 16:53:29,890 - INFO - Processing request of type CallToolRequest
+2025-08-01 16:53:29,890 - INFO - 正在注册实例到服务
+2025-08-01 16:53:29,968 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance?ip=11.11.11.11&port=8800&serviceName=test&ephemeral=True

@@ -1,0 +1,33 @@
+2025-07-23 11:17:46,261 - INFO - Processing request of type ListPromptsRequest
+2025-07-23 11:17:46,306 - INFO - Processing request of type PingRequest
+2025-07-23 11:17:46,310 - INFO - Processing request of type ListResourcesRequest
+2025-07-23 11:17:46,371 - INFO - Processing request of type ListPromptsRequest
+2025-07-23 11:17:46,375 - INFO - Processing request of type PingRequest
+2025-07-23 11:17:46,379 - INFO - Processing request of type ListResourcesRequest
+2025-07-23 11:18:07,541 - INFO - Processing request of type PingRequest
+2025-07-23 11:18:07,541 - INFO - Processing request of type PingRequest
+2025-07-23 11:18:07,543 - INFO - Processing request of type ListToolsRequest
+2025-07-23 11:18:07,546 - INFO - Processing request of type ListToolsRequest
+2025-07-23 11:18:18,069 - INFO - Processing request of type PingRequest
+2025-07-23 11:18:18,072 - INFO - Processing request of type CallToolRequest
+2025-07-23 11:18:18,073 - INFO - 正在请求ECS服务器列表,限制数量: 100
+2025-07-23 11:18:18,347 - INFO - 成功获取 13 台服务器信息
+2025-07-23 11:18:18,356 - INFO - Warning: InsecureRequestWarning: Unverified HTTPS request is being made to host 'ecs.cn-north-7.ulanqab.huawei.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2025-07-23 11:19:21,144 - INFO - Processing request of type PingRequest
+2025-07-23 11:19:21,144 - INFO - Processing request of type CallToolRequest
+2025-07-23 11:19:21,144 - INFO - 正在查询服务器详情，ID: 41137a2b-d5e5-4d01-9a91-5616f0fd230f
+2025-07-23 11:19:21,595 - INFO - 成功获取服务器信息，名称: cce-test-nodepool-lwm-cxf6r
+2025-07-23 11:19:21,595 - INFO - Warning: InsecureRequestWarning: Unverified HTTPS request is being made to host 'ecs.cn-north-7.ulanqab.huawei.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2025-07-25 11:19:25,420 - INFO - StreamableHTTP session manager started
+2025-07-25 11:31:27,211 - INFO - StreamableHTTP session manager shutting down
+2025-07-25 11:31:33,364 - INFO - StreamableHTTP session manager started
+2025-07-25 11:32:00,564 - INFO - StreamableHTTP session manager shutting down
+2025-07-25 11:32:05,077 - INFO - StreamableHTTP session manager started
+2025-07-25 11:33:31,368 - INFO - StreamableHTTP session manager shutting down
+2025-07-25 11:34:22,403 - INFO - Processing request of type ListToolsRequest
+2025-07-25 11:34:22,412 - INFO - Processing request of type PingRequest
+2025-07-25 11:34:22,415 - INFO - Processing request of type ListPromptsRequest
+2025-07-25 11:34:22,419 - INFO - Processing request of type PingRequest
+2025-07-25 11:34:22,424 - INFO - Processing request of type ListResourcesRequest
+2025-07-25 11:34:22,433 - INFO - Processing request of type PingRequest
+2025-07-25 11:34:22,470 - INFO - Processing request of type PingRequest
