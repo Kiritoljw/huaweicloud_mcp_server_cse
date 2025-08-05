@@ -422,8 +422,9 @@ def NacosQueryInstanceDetail(ip:str, port:int, serviceName:str , namespaceId:str
     except Exception as e:
         logger.error(f"查询服务{serviceName}下的端口为{port}的实例信息未预期错误：{e}")
         return {"error": "服务内部错误"}
-    
-def NacosSendInstanceBeat(ip:str, port:int, serviceName:str, beat:str, namespaceId:str = "public" ):
+
+@mcp.tool()
+def NacosSendInstanceBeat(ip:str, port:int, serviceName:str, namespaceId:str = "public" ):
     """
     Description : Send instance beat.
 
@@ -431,21 +432,33 @@ def NacosSendInstanceBeat(ip:str, port:int, serviceName:str, beat:str, namespace
         ip (str) : IP of instance
         port (int) : Port of instance
         servicename (str) : service name
-        beat (str) : beat content
+        beat (str) : beat content in JSON format
         namespaceId (str) : ID of namespace
 
     Return:
         ok
     """
+    import json
     base_url = "http://100.85.123.17:8848/nacos/v1"
     url = f"{base_url}/ns/instance/beat"
+
+    #  # Ensure beat is properly formatted as JSON
+    # try:
+    #     # If beat is a string containing JSON, parse it to validate
+    #     if isinstance(beat, str):
+    #         json_beat = json.loads(beat)
+    #         # Convert back to JSON string for the request
+    #         beat = json.dumps(json_beat)
+    # except json.JSONDecodeError:
+    #     logger.error("Invalid JSON format for beat parameter")
+    #     return {"error": "Beat parameter must be a valid JSON string"}
 
     params = {
         'ip' : ip,
         'port' : port,
         'serviceName' : serviceName,
-        'namespaceId' : namespaceId,
-        'beat' : beat
+        'namespaceId' : namespaceId
+        # 'beat' : beat
     }
     headers = {
         'X-Auth-Token' : TOKEN,
@@ -475,11 +488,13 @@ def NacosSendInstanceBeat(ip:str, port:int, serviceName:str, beat:str, namespace
         return {"error": "服务内部错误"}
 
 @mcp.tool()    
-def NacosCreateService(serviceName:str = "normal")->list:
+def NacosCreateService(serviceName:str = "normal" , namespaceId:str = "public"):
     """
     Description:Create service.
 
-    Args: serviceName
+    Args: 
+        serviceName : name of service
+        namespaceId : Id of namespace 
 
     Return: ok
     """
@@ -487,7 +502,8 @@ def NacosCreateService(serviceName:str = "normal")->list:
     url = f"{base_url}/ns/service"
 
     params = {
-        'serviceName':serviceName
+        'serviceName' : serviceName,
+        'namespaceId' : namespaceId
     }
 
     headers = {
@@ -519,11 +535,13 @@ def NacosCreateService(serviceName:str = "normal")->list:
         return {"error": "服务内部错误"}
     
 @mcp.tool()    
-def NacosDeleteService(serviceName:str):
+def NacosDeleteService(serviceName:str, namespaceId:str = "public"):
     """
     Description:Delete a service, only permitted when instance count is 0.
 
-    Args: serviceName
+    Args: 
+        serviceName : name of service
+        namespaceId : Id of namespace 
 
     Return: ok
     """
@@ -531,7 +549,8 @@ def NacosDeleteService(serviceName:str):
     url = f"{base_url}/ns/service"
 
     params = {
-        'serviceName':serviceName
+        'serviceName' : serviceName,
+        'namespaceId' : namespaceId
     }
 
     headers = {
@@ -563,11 +582,13 @@ def NacosDeleteService(serviceName:str):
         return {"error": "服务内部错误"}
     
 @mcp.tool()    
-def NacosUpdateService(serviceName:str)->list:
+def NacosUpdateService(serviceName:str, namespaceId:str = "public")->list:
     """
     Description:Update a service.
 
-    Args: serviceName
+    Args: 
+        serviceName : name of service
+        namespaceId : Id of namespace 
 
     Return: ok
     """
@@ -575,7 +596,8 @@ def NacosUpdateService(serviceName:str)->list:
     url = f"{base_url}/ns/service"
 
     params = {
-        'serviceName':serviceName
+        'serviceName' : serviceName,
+        'namespaceId' : namespaceId
     }
 
     headers = {
@@ -607,11 +629,13 @@ def NacosUpdateService(serviceName:str)->list:
         return {"error": "服务内部错误"}
     
 @mcp.tool()    
-def NacosQueryService(serviceName:str)->list:
+def NacosQueryService(serviceName:str, namespaceId:str = "public")->list:
     """
     Description:Query a service.
 
-    Args: serviceName
+    Args: 
+        serviceName : name of service
+        namespaceId : Id of namespace 
 
     Return: ok
     """
@@ -619,7 +643,8 @@ def NacosQueryService(serviceName:str)->list:
     url = f"{base_url}/ns/service"
 
     params = {
-        'serviceName':serviceName
+        'serviceName' : serviceName,
+        'namespaceId' : namespaceId
     }
 
     headers = {
@@ -654,11 +679,15 @@ def NacosQueryService(serviceName:str)->list:
         return {"error": "服务内部错误"}
     
 @mcp.tool()    
-def NacosQueryServiceList(pageNo:int = 1, pageSize:int = 10)->list:
+def NacosQueryServiceList(pageNo:int = 1, pageSize:int = 10, namespaceId:str = "public")->list:
     """
     Description:Query service list.
 
-    Args: serviceName
+    Args: 
+        pageNo (int) : current page number
+        pageSize (int) : page size
+        serviceName (str) : name of service
+        namespaceId (str) : Id of namespace 
 
     Return: ok
     """
@@ -667,7 +696,8 @@ def NacosQueryServiceList(pageNo:int = 1, pageSize:int = 10)->list:
 
     params = {
         'pageNo':pageNo,
-        'pageSize' : pageSize
+        'pageSize' : pageSize,
+        'namespaceId' : namespaceId
     }
 
     headers = {

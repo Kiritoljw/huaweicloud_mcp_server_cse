@@ -1017,3 +1017,265 @@ ListToolsRequest.method
 2025-08-05 15:58:00,888 - INFO - Processing request of type CallToolRequest
 2025-08-05 15:58:00,889 - INFO - 正在删除实例test
 2025-08-05 15:58:00,967 - INFO - 成功删除实例
+2025-08-05 17:15:33,867 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-05 17:15:33,885 - INFO - Processing request of type ListToolsRequest
+2025-08-05 17:16:16,078 - INFO - Processing request of type PingRequest
+2025-08-05 17:16:16,082 - INFO - Processing request of type ListPromptsRequest
+2025-08-05 17:16:16,123 - INFO - Processing request of type PingRequest
+2025-08-05 17:16:16,125 - INFO - Processing request of type ListResourcesRequest
+2025-08-05 17:16:16,175 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-05 17:16:16,178 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-05 17:16:16,215 - INFO - Processing request of type ListPromptsRequest
+2025-08-05 17:16:16,215 - INFO - Processing request of type ListResourcesRequest
+2025-08-05 17:16:16,222 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-05 17:16:16,224 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-05 17:16:16,245 - INFO - Processing request of type ListPromptsRequest
+2025-08-05 17:16:16,246 - INFO - Processing request of type ListResourcesRequest
+2025-08-05 17:18:54,148 - INFO - Processing request of type PingRequest
+2025-08-05 17:18:54,151 - INFO - Processing request of type CallToolRequest
+2025-08-05 17:18:54,151 - INFO - 正在查询服务列表
+2025-08-05 17:18:54,253 - INFO - 服务列表查询成功，共有0个服务
+2025-08-05 17:19:02,599 - INFO - Processing request of type PingRequest
+2025-08-05 17:19:02,601 - INFO - Processing request of type CallToolRequest
+2025-08-05 17:19:02,601 - INFO - 正在查询服务列表
+2025-08-05 17:19:02,675 - INFO - 服务列表查询成功，共有0个服务
+2025-08-05 17:19:07,793 - INFO - Processing request of type PingRequest
+2025-08-05 17:19:07,794 - INFO - Processing request of type CallToolRequest
+2025-08-05 17:19:07,795 - INFO - 正在查询服务列表
+2025-08-05 17:19:07,870 - INFO - 服务列表查询成功，共有0个服务
+2025-08-05 17:31:11,272 - INFO - Processing request of type PingRequest
+2025-08-05 17:31:11,274 - INFO - Processing request of type ListToolsRequest
+2025-08-05 17:31:29,438 - INFO - Processing request of type PingRequest
+2025-08-05 17:31:29,441 - INFO - Processing request of type CallToolRequest
+2025-08-05 17:31:29,442 - INFO - 正在创建服务
+2025-08-05 17:31:29,522 - INFO - 成功创建服务
+2025-08-05 17:31:38,311 - INFO - Processing request of type PingRequest
+2025-08-05 17:31:38,313 - INFO - Processing request of type CallToolRequest
+2025-08-05 17:31:38,313 - INFO - 正在创建服务
+2025-08-05 17:31:38,388 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=example-service&namespaceId=public
+2025-08-05 17:41:35,242 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-05 17:41:35,256 - INFO - Processing request of type ListToolsRequest
+2025-08-05 17:41:43,137 - INFO - Processing request of type PingRequest
+2025-08-05 17:41:43,139 - INFO - Processing request of type CallToolRequest
+2025-08-05 17:41:43,139 - INFO - 正在创建服务
+2025-08-05 17:41:43,220 - INFO - 成功创建服务
+2025-08-05 17:44:28,566 - INFO - Processing request of type PingRequest
+2025-08-05 17:44:28,568 - INFO - Processing request of type CallToolRequest
+2025-08-05 17:44:28,568 - INFO - 正在注册实例到服务ljw
+2025-08-05 17:44:28,654 - INFO - 成功注册实例到服务
+2025-08-05 17:44:33,584 - INFO - Processing request of type PingRequest
+2025-08-05 17:44:33,587 - INFO - Processing request of type CallToolRequest
+2025-08-05 17:44:33,587 - INFO - 正在注册实例到服务ljw
+2025-08-05 17:44:33,666 - INFO - 成功注册实例到服务
+2025-08-05 17:47:04,223 - INFO - Processing request of type PingRequest
+2025-08-05 17:47:04,225 - INFO - Processing request of type ListToolsRequest
+2025-08-05 17:47:59,297 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-05 17:47:59,298 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-05 17:47:59,298 - INFO - Processing request of type PingRequest
+2025-08-05 17:48:03,806 - INFO - Processing request of type PingRequest
+2025-08-05 17:48:03,809 - INFO - Processing request of type CallToolRequest
+2025-08-05 17:48:03,809 - INFO - 正在创建服务
+2025-08-05 17:48:03,909 - INFO - 成功创建服务
+2025-08-05 17:48:08,030 - INFO - Processing request of type PingRequest
+2025-08-05 17:48:08,033 - INFO - Processing request of type ListPromptsRequest
+2025-08-05 17:48:08,083 - INFO - Processing request of type PingRequest
+2025-08-05 17:48:08,085 - INFO - Processing request of type ListResourcesRequest
+2025-08-05 17:48:08,333 - INFO - Processing request of type PingRequest
+2025-08-05 17:48:08,336 - INFO - Processing request of type ListPromptsRequest
+2025-08-05 17:48:08,337 - INFO - Processing request of type PingRequest
+2025-08-05 17:48:08,340 - INFO - Processing request of type ListResourcesRequest
+2025-08-05 17:48:08,348 - INFO - Processing request of type PingRequest
+2025-08-05 17:48:08,350 - INFO - Processing request of type PingRequest
+2025-08-05 17:48:08,353 - INFO - Processing request of type ListPromptsRequest
+2025-08-05 17:48:08,353 - INFO - Processing request of type ListResourcesRequest
+2025-08-05 17:48:11,835 - INFO - Processing request of type PingRequest
+2025-08-05 17:48:11,838 - INFO - Processing request of type CallToolRequest
+2025-08-05 17:50:06,843 - INFO - Processing request of type PingRequest
+2025-08-05 17:50:06,844 - INFO - Processing request of type PingRequest
+2025-08-05 17:50:06,844 - INFO - Processing request of type PingRequest
+2025-08-05 17:56:05,619 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-05 17:56:05,631 - INFO - Processing request of type ListToolsRequest
+2025-08-05 17:57:23,070 - INFO - Processing request of type PingRequest
+2025-08-05 17:57:23,072 - INFO - Processing request of type CallToolRequest
+2025-08-05 17:57:23,074 - INFO - 正在发送心跳
+2025-08-05 17:57:23,159 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance/beat?ip=127.0.0.1&port=8080&serviceName=ljw&namespaceId=public&beat=heartbeat_content
+2025-08-05 17:58:05,091 - INFO - Processing request of type PingRequest
+2025-08-05 17:58:05,093 - INFO - Processing request of type CallToolRequest
+2025-08-05 17:58:48,309 - INFO - Processing request of type PingRequest
+2025-08-05 17:58:48,311 - INFO - Processing request of type CallToolRequest
+2025-08-05 17:58:48,311 - INFO - 正在发送心跳
+2025-08-05 17:58:48,390 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance/beat?ip=127.0.0.1&port=8080&serviceName=ljw&namespaceId=public&beat=000000000000
+2025-08-05 17:59:04,671 - INFO - Processing request of type PingRequest
+2025-08-05 17:59:04,674 - INFO - Processing request of type CallToolRequest
+2025-08-05 17:59:04,674 - INFO - 正在发送心跳
+2025-08-05 17:59:04,750 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance/beat?ip=127.0.0.1&port=8080&serviceName=ljw&namespaceId=public&beat=000000000000
+2025-08-05 17:59:28,836 - INFO - Processing request of type PingRequest
+2025-08-05 17:59:28,838 - INFO - Processing request of type CallToolRequest
+2025-08-05 17:59:28,838 - INFO - 正在发送心跳
+2025-08-05 17:59:28,936 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance/beat?ip=127.0.0.1&port=8080&serviceName=ljw&namespaceId=public&beat=be522b2c25514393be225672396532b5
+2025-08-05 18:00:57,600 - INFO - Processing request of type PingRequest
+2025-08-05 18:00:57,603 - INFO - Processing request of type CallToolRequest
+2025-08-05 18:00:57,603 - INFO - 正在发送心跳
+2025-08-05 18:00:57,703 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance/beat?ip=127.0.0.1&port=8080&serviceName=ljw&namespaceId=public&beat=be522b2c25514393be225672396532b5
+2025-08-05 18:02:34,337 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-05 18:02:34,351 - INFO - Processing request of type ListToolsRequest
+2025-08-05 18:03:20,948 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-05 18:03:20,948 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-05 18:03:20,949 - INFO - Processing request of type PingRequest
+2025-08-05 18:03:23,585 - INFO - Processing request of type PingRequest
+2025-08-05 18:03:23,586 - INFO - Processing request of type PingRequest
+2025-08-05 18:03:23,586 - INFO - Processing request of type PingRequest
+2025-08-05 18:03:23,588 - INFO - Processing request of type ListPromptsRequest
+2025-08-05 18:03:23,589 - INFO - Processing request of type ListResourcesRequest
+2025-08-05 18:03:31,403 - INFO - Processing request of type PingRequest
+2025-08-05 18:03:31,403 - INFO - Processing request of type PingRequest
+2025-08-05 18:03:31,404 - INFO - Processing request of type PingRequest
+2025-08-05 18:03:35,148 - INFO - Processing request of type PingRequest
+2025-08-05 18:03:35,148 - INFO - Processing request of type PingRequest
+2025-08-05 18:03:35,151 - INFO - Processing request of type ListPromptsRequest
+2025-08-05 18:03:35,151 - INFO - Processing request of type ListResourcesRequest
+2025-08-05 18:03:35,160 - INFO - Processing request of type PingRequest
+2025-08-05 18:03:35,161 - INFO - Processing request of type PingRequest
+2025-08-05 18:03:35,164 - INFO - Processing request of type ListPromptsRequest
+2025-08-05 18:03:35,164 - INFO - Processing request of type ListResourcesRequest
+2025-08-05 18:04:03,914 - INFO - Processing request of type PingRequest
+2025-08-05 18:04:03,916 - INFO - Processing request of type CallToolRequest
+2025-08-05 18:04:24,482 - INFO - Processing request of type PingRequest
+2025-08-05 18:04:24,484 - INFO - Processing request of type CallToolRequest
+2025-08-05 18:04:24,484 - ERROR - Invalid JSON format for beat parameter
+2025-08-05 18:04:50,266 - INFO - Processing request of type PingRequest
+2025-08-05 18:04:50,267 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:14:24,506 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-05 19:14:24,519 - INFO - Processing request of type ListToolsRequest
+2025-08-05 19:14:54,730 - INFO - Processing request of type PingRequest
+2025-08-05 19:14:54,731 - INFO - Processing request of type ListPromptsRequest
+2025-08-05 19:14:54,771 - INFO - Processing request of type PingRequest
+2025-08-05 19:14:54,772 - INFO - Processing request of type ListResourcesRequest
+2025-08-05 19:14:55,086 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-05 19:14:55,088 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-05 19:14:55,114 - INFO - Processing request of type ListResourcesRequest
+2025-08-05 19:14:55,115 - INFO - Processing request of type ListPromptsRequest
+2025-08-05 19:14:55,119 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-05 19:14:55,120 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-05 19:14:55,141 - INFO - Processing request of type ListPromptsRequest
+2025-08-05 19:14:55,142 - INFO - Processing request of type ListResourcesRequest
+2025-08-05 19:15:34,572 - INFO - Processing request of type PingRequest
+2025-08-05 19:15:34,574 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:15:34,574 - INFO - 正在发送心跳
+2025-08-05 19:18:28,899 - INFO - Processing request of type PingRequest
+2025-08-05 19:18:28,900 - INFO - Processing request of type PingRequest
+2025-08-05 19:18:28,900 - INFO - Processing request of type PingRequest
+2025-08-05 19:18:31,163 - INFO - Processing request of type PingRequest
+2025-08-05 19:18:33,497 - INFO - Processing request of type PingRequest
+2025-08-05 19:18:33,498 - INFO - Processing request of type PingRequest
+2025-08-05 19:18:33,499 - INFO - Processing request of type PingRequest
+2025-08-05 19:19:17,523 - INFO - Processing request of type PingRequest
+2025-08-05 19:19:17,527 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:19:17,527 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:19:17,635 - INFO - 成功注册实例到服务
+2025-08-05 19:19:44,666 - INFO - Processing request of type PingRequest
+2025-08-05 19:19:44,668 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:19:44,668 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:19:44,751 - INFO - 成功注册实例到服务
+2025-08-05 19:20:15,483 - INFO - Processing request of type PingRequest
+2025-08-05 19:20:15,484 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:20:36,090 - INFO - Processing request of type PingRequest
+2025-08-05 19:20:36,092 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:20:36,092 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:20:36,178 - INFO - 成功注册实例到服务
+2025-08-05 19:21:10,566 - INFO - Processing request of type PingRequest
+2025-08-05 19:21:10,568 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:21:10,568 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:21:10,654 - INFO - 成功注册实例到服务
+2025-08-05 19:22:11,102 - INFO - Processing request of type PingRequest
+2025-08-05 19:22:11,104 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:22:11,104 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:22:11,184 - INFO - 成功注册实例到服务
+2025-08-05 19:22:17,929 - INFO - Processing request of type PingRequest
+2025-08-05 19:22:17,931 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:22:17,931 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:22:18,014 - INFO - 成功注册实例到服务
+2025-08-05 19:23:00,331 - INFO - Processing request of type PingRequest
+2025-08-05 19:23:00,332 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:23:00,334 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:23:00,413 - INFO - 成功注册实例到服务
+2025-08-05 19:23:48,412 - INFO - Processing request of type PingRequest
+2025-08-05 19:23:48,414 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:23:48,414 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:23:48,498 - INFO - 成功注册实例到服务
+2025-08-05 19:23:56,992 - INFO - Processing request of type PingRequest
+2025-08-05 19:23:56,994 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:23:56,995 - INFO - 正在查询服务ljw下的实例列表
+2025-08-05 19:23:57,069 - INFO - 成功获取 2 个实例列表
+2025-08-05 19:24:35,266 - INFO - Processing request of type PingRequest
+2025-08-05 19:24:35,268 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:24:35,268 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:24:35,348 - INFO - 成功注册实例到服务
+2025-08-05 19:25:44,449 - INFO - Processing request of type PingRequest
+2025-08-05 19:25:44,451 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:25:44,451 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:25:44,533 - INFO - 成功注册实例到服务
+2025-08-05 19:25:55,678 - INFO - Processing request of type PingRequest
+2025-08-05 19:25:55,680 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:25:55,680 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:25:55,759 - INFO - 成功注册实例到服务
+2025-08-05 19:26:03,806 - INFO - Processing request of type PingRequest
+2025-08-05 19:26:03,808 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:26:03,808 - INFO - 正在查询服务ljw下的实例列表
+2025-08-05 19:26:03,881 - INFO - 成功获取 0 个实例列表
+2025-08-05 19:26:40,294 - INFO - Processing request of type PingRequest
+2025-08-05 19:26:40,296 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:26:40,296 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:26:40,384 - INFO - 成功注册实例到服务
+2025-08-05 19:26:52,419 - INFO - Processing request of type PingRequest
+2025-08-05 19:26:52,422 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:26:52,422 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:26:52,525 - INFO - 成功注册实例到服务
+2025-08-05 19:27:32,369 - INFO - Processing request of type PingRequest
+2025-08-05 19:27:32,371 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:27:32,371 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:27:32,451 - INFO - 成功注册实例到服务
+2025-08-05 19:28:17,081 - INFO - Processing request of type PingRequest
+2025-08-05 19:28:17,083 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:28:17,084 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:28:17,165 - INFO - 成功注册实例到服务
+2025-08-05 19:28:38,190 - INFO - Processing request of type PingRequest
+2025-08-05 19:28:38,192 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:28:38,192 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:28:38,272 - INFO - 成功注册实例到服务
+2025-08-05 19:29:31,352 - INFO - Processing request of type PingRequest
+2025-08-05 19:29:31,354 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:29:31,354 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:29:31,437 - INFO - 成功注册实例到服务
+2025-08-05 19:30:06,612 - INFO - Processing request of type PingRequest
+2025-08-05 19:30:06,614 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:30:06,614 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:30:06,706 - INFO - 成功注册实例到服务
+2025-08-05 19:30:32,846 - INFO - Processing request of type PingRequest
+2025-08-05 19:30:32,848 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:30:32,849 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:30:32,934 - INFO - 成功注册实例到服务
+2025-08-05 19:31:04,713 - INFO - Processing request of type PingRequest
+2025-08-05 19:31:04,716 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:31:04,716 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:31:04,815 - INFO - 成功注册实例到服务
+2025-08-05 19:31:28,418 - INFO - Processing request of type PingRequest
+2025-08-05 19:31:28,420 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:31:28,420 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:31:28,525 - INFO - 成功注册实例到服务
+2025-08-05 19:31:32,977 - INFO - Processing request of type PingRequest
+2025-08-05 19:31:32,979 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:31:32,979 - INFO - 正在查询服务ljw下的实例列表
+2025-08-05 19:31:33,052 - INFO - 成功获取 2 个实例列表
+2025-08-05 19:31:50,246 - INFO - Processing request of type PingRequest
+2025-08-05 19:31:50,247 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:31:50,248 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:31:50,332 - INFO - 成功注册实例到服务
+2025-08-05 19:32:27,191 - INFO - Processing request of type PingRequest
+2025-08-05 19:32:27,193 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:32:27,193 - INFO - 正在注册实例到服务ljw
+2025-08-05 19:32:27,273 - INFO - 成功注册实例到服务
+2025-08-05 19:32:30,883 - INFO - Processing request of type PingRequest
+2025-08-05 19:32:30,885 - INFO - Processing request of type CallToolRequest
+2025-08-05 19:32:30,885 - INFO - 正在查询服务ljw下的实例列表
+2025-08-05 19:32:30,976 - INFO - 成功获取 2 个实例列表
