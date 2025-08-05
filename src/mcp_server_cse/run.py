@@ -202,7 +202,7 @@ def NacosRegisterInstance(ip:str, port:int, serviceName:str , namespaceId:str = 
         logger.error(f"注册实例失败: {e}")
         return {"error": "网络请求失败"}
     except ValueError as e:
-        logger.error(f"注册实例JSON解析失败：{e}")
+        logger.error(f"注册实例失败：{e}")
         return {"error": "响应格式错误"}
     except Exception as e:
         logger.error(f"注册实例未预期错误：{e}")
@@ -253,7 +253,7 @@ def NacosDeregisterInstance(ip:str, port:int, serviceName:str , namespaceId:str 
         logger.error(f"删除实例失败: {e}")
         return {"error": "网络请求失败"}
     except ValueError as e:
-        logger.error(f"删除实例JSON解析失败：{e}")
+        logger.error(f"删除实例失败：{e}")
         return {"error": "响应格式错误"}
     except Exception as e:
         logger.error(f"删除实例未预期错误：{e}")
@@ -308,7 +308,7 @@ def NacosModifyInstance(ip:str, port:int, serviceName:str , namespaceId:str = "p
         logger.error(f"修改实例失败: {e}")
         return {"error": "网络请求失败"}
     except ValueError as e:
-        logger.error(f"修改实例JSON解析失败：{e}")
+        logger.error(f"修改实例失败：{e}")
         return {"error": "响应格式错误"}
     except Exception as e:
         logger.error(f"修改实例未预期错误：{e}")
@@ -423,8 +423,56 @@ def NacosQueryInstanceDetail(ip:str, port:int, serviceName:str , namespaceId:str
         logger.error(f"查询服务{serviceName}下的端口为{port}的实例信息未预期错误：{e}")
         return {"error": "服务内部错误"}
     
+def NacosSendInstanceBeat(ip:str, port:int, serviceName:str, beat:str, namespaceId:str = "public" ):
+    """
+    Description : Send instance beat.
 
+    Args:
+        ip (str) : IP of instance
+        port (int) : Port of instance
+        servicename (str) : service name
+        beat (str) : beat content
+        namespaceId (str) : ID of namespace
 
+    Return:
+        ok
+    """
+    base_url = "http://100.85.123.17:8848/nacos/v1"
+    url = f"{base_url}/ns/instance/beat"
+
+    params = {
+        'ip' : ip,
+        'port' : port,
+        'serviceName' : serviceName,
+        'namespaceId' : namespaceId,
+        'beat' : beat
+    }
+    headers = {
+        'X-Auth-Token' : TOKEN,
+        'content-Type' : 'application/json'
+    }
+    try:
+        logger.info(f"正在发送心跳")
+        response = requests.put(url, params=params, headers=headers, verify=False, timeout=30)
+        response.raise_for_status()
+        if response.text.strip() == 'ok':
+            logger.info(f"成功发送心跳")
+        return response
+    except requests.exceptions.Timeout:
+        logger.error("发送心跳超时")
+        return {"error": "请求超时"}
+    except requests.exceptions.HTTPError as e:
+        logger.error(f"HTTP错误：{e.response.status_code} - {e}")
+        return {"error": f"HTTP错误: {e.response.status_code}"}
+    except requests.exceptions.RequestException as e:
+        logger.error(f"发送心跳失败：{e}")
+        return {"error": "网络请求失败"}
+    except ValueError as e:
+        logger.error(f"发送心跳失败：{e}")
+        return {"error": "响应格式错误"}
+    except Exception as e:
+        logger.error(f"创建服务未预期错误：{e}")
+        return {"error": "服务内部错误"}
 
 @mcp.tool()    
 def NacosCreateService(serviceName:str = "normal")->list:
@@ -464,14 +512,14 @@ def NacosCreateService(serviceName:str = "normal")->list:
         logger.error(f"创建服务失败：{e}")
         return {"error": "网络请求失败"}
     except ValueError as e:
-        logger.error(f"创建服务JSON解析失败：{e}")
+        logger.error(f"创建服务失败：{e}")
         return {"error": "响应格式错误"}
     except Exception as e:
         logger.error(f"创建服务未预期错误：{e}")
         return {"error": "服务内部错误"}
     
 @mcp.tool()    
-def NacosDeleteService(serviceName:str)->list:
+def NacosDeleteService(serviceName:str):
     """
     Description:Delete a service, only permitted when instance count is 0.
 

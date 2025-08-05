@@ -611,3 +611,409 @@ ListToolsRequest.method
 2025-08-01 16:53:29,890 - INFO - Processing request of type CallToolRequest
 2025-08-01 16:53:29,890 - INFO - 正在注册实例到服务
 2025-08-01 16:53:29,968 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance?ip=11.11.11.11&port=8800&serviceName=test&ephemeral=True
+2025-08-05 15:07:24,436 - INFO - Processing request of type ListPromptsRequest
+2025-08-05 15:07:24,487 - INFO - Processing request of type PingRequest
+2025-08-05 15:07:24,491 - INFO - Processing request of type ListResourcesRequest
+2025-08-05 15:07:24,568 - INFO - Processing request of type ListPromptsRequest
+2025-08-05 15:07:24,568 - INFO - Processing request of type ListResourcesRequest
+2025-08-05 15:07:24,595 - INFO - Processing request of type ListPromptsRequest
+2025-08-05 15:07:24,596 - INFO - Processing request of type ListResourcesRequest
+2025-08-05 15:08:03,194 - INFO - Processing request of type PingRequest
+2025-08-05 15:08:03,197 - INFO - Processing request of type ListToolsRequest
+2025-08-05 15:08:30,748 - INFO - Processing request of type PingRequest
+2025-08-05 15:08:30,751 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:08:30,751 - INFO - 正在查询服务列表
+2025-08-05 15:08:30,827 - INFO - 服务列表查询成功，共有2个服务
+2025-08-05 15:10:59,700 - INFO - Processing request of type PingRequest
+2025-08-05 15:10:59,702 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:10:59,702 - INFO - 正在查询服务test下的实例列表
+2025-08-05 15:10:59,781 - INFO - 成功获取 1 个实例列表
+2025-08-05 15:14:02,654 - INFO - Processing request of type PingRequest
+2025-08-05 15:14:02,656 - INFO - Processing request of type ListToolsRequest
+2025-08-05 15:14:31,440 - INFO - Processing request of type PingRequest
+2025-08-05 15:14:31,443 - WARNING - Failed to validate request: 23 validation errors for ClientRequest
+PingRequest.method
+  Input should be 'ping' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+InitializeRequest.method
+  Input should be 'initialize' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+InitializeRequest.params.protocolVersion
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 13}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+InitializeRequest.params.capabilities
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 13}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+InitializeRequest.params.clientInfo
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 13}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+CompleteRequest.method
+  Input should be 'completion/complete' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+CompleteRequest.params.ref
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 13}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+CompleteRequest.params.argument
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 13}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+SetLevelRequest.method
+  Input should be 'logging/setLevel' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+SetLevelRequest.params.level
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 13}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+GetPromptRequest.method
+  Input should be 'prompts/get' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+GetPromptRequest.params.arguments
+  Input should be a valid dictionary [type=dict_type, input_value='{"ip":"实例的IP地址...,"serviceName":"test"}', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/dict_type
+ListPromptsRequest.method
+  Input should be 'prompts/list' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+ListResourcesRequest.method
+  Input should be 'resources/list' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+ListResourceTemplatesRequest.method
+  Input should be 'resources/templates/list' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+ReadResourceRequest.method
+  Input should be 'resources/read' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+ReadResourceRequest.params.uri
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 13}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+SubscribeRequest.method
+  Input should be 'resources/subscribe' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+SubscribeRequest.params.uri
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 13}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+UnsubscribeRequest.method
+  Input should be 'resources/unsubscribe' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+UnsubscribeRequest.params.uri
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 13}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+CallToolRequest.params.arguments
+  Input should be a valid dictionary [type=dict_type, input_value='{"ip":"实例的IP地址...,"serviceName":"test"}', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/dict_type
+ListToolsRequest.method
+  Input should be 'tools/list' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+2025-08-05 15:14:35,294 - INFO - Processing request of type PingRequest
+2025-08-05 15:14:35,295 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:14:35,295 - INFO - 正在查询服务test下的实例列表
+2025-08-05 15:14:35,370 - INFO - 成功获取 1 个实例列表
+2025-08-05 15:14:41,717 - INFO - Processing request of type PingRequest
+2025-08-05 15:14:41,720 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:14:41,721 - INFO - 正在删除实例test
+2025-08-05 15:14:41,795 - INFO - 成功删除实例
+2025-08-05 15:17:19,769 - INFO - Processing request of type PingRequest
+2025-08-05 15:17:19,770 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:17:19,771 - INFO - 正在删除实例test
+2025-08-05 15:17:19,866 - INFO - 成功删除实例
+2025-08-05 15:17:32,439 - INFO - Processing request of type PingRequest
+2025-08-05 15:17:32,441 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:17:32,442 - INFO - 正在查询服务test下的实例列表
+2025-08-05 15:17:32,518 - INFO - 成功获取 0 个实例列表
+2025-08-05 15:46:26,835 - INFO - Processing request of type PingRequest
+2025-08-05 15:46:26,837 - INFO - Processing request of type ListToolsRequest
+2025-08-05 15:47:40,965 - INFO - Processing request of type PingRequest
+2025-08-05 15:47:40,967 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:47:40,967 - INFO - 正在查询服务test下的实例列表
+2025-08-05 15:47:41,063 - INFO - 成功获取 0 个实例列表
+2025-08-05 15:47:48,855 - INFO - Processing request of type PingRequest
+2025-08-05 15:47:48,857 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:47:48,857 - INFO - 正在删除服务
+2025-08-05 15:47:48,932 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=test
+2025-08-05 15:47:53,798 - INFO - Processing request of type PingRequest
+2025-08-05 15:47:53,801 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:47:53,801 - INFO - 正在查询服务列表
+2025-08-05 15:47:53,875 - INFO - 服务列表查询成功，共有1个服务
+2025-08-05 15:48:52,496 - INFO - Processing request of type PingRequest
+2025-08-05 15:48:52,498 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:48:52,498 - INFO - 正在查询服务test下的实例列表
+2025-08-05 15:48:52,595 - INFO - 成功获取 0 个实例列表
+2025-08-05 15:49:00,385 - INFO - Processing request of type PingRequest
+2025-08-05 15:49:00,388 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:49:00,388 - INFO - 正在删除服务
+2025-08-05 15:49:00,463 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=test
+2025-08-05 15:49:07,279 - INFO - Processing request of type PingRequest
+2025-08-05 15:49:07,281 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:49:07,282 - INFO - 正在查询服务列表
+2025-08-05 15:49:07,370 - INFO - 服务列表查询成功，共有1个服务
+2025-08-05 15:50:25,121 - INFO - Processing request of type PingRequest
+2025-08-05 15:50:25,123 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:50:25,123 - INFO - 正在查询服务test下的实例列表
+2025-08-05 15:50:25,196 - INFO - 成功获取 0 个实例列表
+2025-08-05 15:50:37,417 - INFO - Processing request of type PingRequest
+2025-08-05 15:50:37,418 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:50:37,419 - INFO - 正在删除实例test
+2025-08-05 15:50:37,492 - INFO - 成功删除实例
+2025-08-05 15:50:56,778 - INFO - Processing request of type PingRequest
+2025-08-05 15:50:56,780 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:50:56,780 - INFO - 正在删除实例test
+2025-08-05 15:50:56,873 - INFO - 成功删除实例
+2025-08-05 15:51:02,091 - INFO - Processing request of type PingRequest
+2025-08-05 15:51:02,093 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:51:02,093 - INFO - 正在删除服务
+2025-08-05 15:51:02,168 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=test
+2025-08-05 15:51:07,535 - INFO - Processing request of type PingRequest
+2025-08-05 15:51:07,537 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:51:07,538 - INFO - 正在查询服务详细信息
+2025-08-05 15:51:07,629 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=test
+2025-08-05 15:51:34,923 - INFO - Processing request of type PingRequest
+2025-08-05 15:51:34,925 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:51:34,925 - INFO - 正在查询服务test下的实例列表
+2025-08-05 15:51:34,999 - INFO - 成功获取 0 个实例列表
+2025-08-05 15:51:39,698 - INFO - Processing request of type PingRequest
+2025-08-05 15:51:39,700 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:51:39,700 - INFO - 正在删除实例test
+2025-08-05 15:51:39,775 - INFO - 成功删除实例
+2025-08-05 15:51:42,787 - INFO - Processing request of type PingRequest
+2025-08-05 15:51:42,790 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:51:42,790 - INFO - 正在删除服务
+2025-08-05 15:51:42,864 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=test
+2025-08-05 15:51:47,234 - INFO - Processing request of type PingRequest
+2025-08-05 15:51:47,236 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:51:47,236 - INFO - 正在查询服务列表
+2025-08-05 15:51:47,321 - INFO - 服务列表查询成功，共有1个服务
+2025-08-05 15:51:49,418 - INFO - Processing request of type PingRequest
+2025-08-05 15:51:49,420 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:51:49,420 - INFO - 正在查询服务详细信息
+2025-08-05 15:51:49,508 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=test
+2025-08-05 15:52:13,282 - INFO - Processing request of type PingRequest
+2025-08-05 15:52:13,288 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:52:13,289 - INFO - 正在查询服务test下的实例列表
+2025-08-05 15:52:13,363 - INFO - 成功获取 0 个实例列表
+2025-08-05 15:52:17,700 - INFO - Processing request of type PingRequest
+2025-08-05 15:52:17,702 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:52:17,702 - INFO - 正在删除服务
+2025-08-05 15:52:17,800 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=test
+2025-08-05 15:52:21,783 - INFO - Processing request of type PingRequest
+2025-08-05 15:52:21,785 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:52:21,785 - INFO - 正在查询服务列表
+2025-08-05 15:52:21,880 - INFO - 服务列表查询成功，共有1个服务
+2025-08-05 15:52:56,046 - INFO - Processing request of type PingRequest
+2025-08-05 15:52:56,048 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:52:56,048 - INFO - 正在查询服务test下的实例列表
+2025-08-05 15:52:56,144 - INFO - 成功获取 0 个实例列表
+2025-08-05 15:53:01,021 - INFO - Processing request of type PingRequest
+2025-08-05 15:53:01,023 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:53:01,023 - INFO - 正在删除服务
+2025-08-05 15:53:01,096 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=test
+2025-08-05 15:53:05,767 - INFO - Processing request of type PingRequest
+2025-08-05 15:53:05,770 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:53:05,770 - INFO - 正在查询服务列表
+2025-08-05 15:53:05,867 - INFO - 服务列表查询成功，共有1个服务
+2025-08-05 15:53:45,681 - INFO - Processing request of type PingRequest
+2025-08-05 15:53:45,683 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:53:45,683 - INFO - 正在查询服务test下的实例列表
+2025-08-05 15:53:45,777 - INFO - 成功获取 0 个实例列表
+2025-08-05 15:53:51,807 - INFO - Processing request of type PingRequest
+2025-08-05 15:53:51,810 - WARNING - Failed to validate request: 23 validation errors for ClientRequest
+PingRequest.method
+  Input should be 'ping' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+InitializeRequest.method
+  Input should be 'initialize' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+InitializeRequest.params.protocolVersion
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 71}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+InitializeRequest.params.capabilities
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 71}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+InitializeRequest.params.clientInfo
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 71}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+CompleteRequest.method
+  Input should be 'completion/complete' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+CompleteRequest.params.ref
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 71}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+CompleteRequest.params.argument
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 71}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+SetLevelRequest.method
+  Input should be 'logging/setLevel' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+SetLevelRequest.params.level
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 71}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+GetPromptRequest.method
+  Input should be 'prompts/get' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+GetPromptRequest.params.arguments
+  Input should be a valid dictionary [type=dict_type, input_value='{"ip":"<实例IP>","port..."namespaceId":"public"}', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/dict_type
+ListPromptsRequest.method
+  Input should be 'prompts/list' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+ListResourcesRequest.method
+  Input should be 'resources/list' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+ListResourceTemplatesRequest.method
+  Input should be 'resources/templates/list' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+ReadResourceRequest.method
+  Input should be 'resources/read' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+ReadResourceRequest.params.uri
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 71}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+SubscribeRequest.method
+  Input should be 'resources/subscribe' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+SubscribeRequest.params.uri
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 71}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+UnsubscribeRequest.method
+  Input should be 'resources/unsubscribe' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+UnsubscribeRequest.params.uri
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 71}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+CallToolRequest.params.arguments
+  Input should be a valid dictionary [type=dict_type, input_value='{"ip":"<实例IP>","port..."namespaceId":"public"}', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/dict_type
+ListToolsRequest.method
+  Input should be 'tools/list' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+2025-08-05 15:53:55,208 - INFO - Processing request of type PingRequest
+2025-08-05 15:53:55,210 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:53:55,210 - INFO - 正在删除服务
+2025-08-05 15:53:55,284 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=test
+2025-08-05 15:53:59,383 - INFO - Processing request of type PingRequest
+2025-08-05 15:53:59,386 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:53:59,386 - INFO - 正在查询服务列表
+2025-08-05 15:53:59,473 - INFO - 服务列表查询成功，共有1个服务
+2025-08-05 15:54:31,010 - INFO - Processing request of type PingRequest
+2025-08-05 15:54:31,012 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:54:31,013 - INFO - 正在查询服务test下的实例列表
+2025-08-05 15:54:31,102 - INFO - 成功获取 0 个实例列表
+2025-08-05 15:54:37,515 - INFO - Processing request of type PingRequest
+2025-08-05 15:54:37,518 - WARNING - Failed to validate request: 23 validation errors for ClientRequest
+PingRequest.method
+  Input should be 'ping' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+InitializeRequest.method
+  Input should be 'initialize' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+InitializeRequest.params.protocolVersion
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 79}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+InitializeRequest.params.capabilities
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 79}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+InitializeRequest.params.clientInfo
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 79}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+CompleteRequest.method
+  Input should be 'completion/complete' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+CompleteRequest.params.ref
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 79}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+CompleteRequest.params.argument
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 79}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+SetLevelRequest.method
+  Input should be 'logging/setLevel' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+SetLevelRequest.params.level
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 79}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+GetPromptRequest.method
+  Input should be 'prompts/get' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+GetPromptRequest.params.arguments
+  Input should be a valid dictionary [type=dict_type, input_value='{"ip": "<instance_ip>", ... "serviceName": "test"}', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/dict_type
+ListPromptsRequest.method
+  Input should be 'prompts/list' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+ListResourcesRequest.method
+  Input should be 'resources/list' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+ListResourceTemplatesRequest.method
+  Input should be 'resources/templates/list' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+ReadResourceRequest.method
+  Input should be 'resources/read' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+ReadResourceRequest.params.uri
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 79}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+SubscribeRequest.method
+  Input should be 'resources/subscribe' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+SubscribeRequest.params.uri
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 79}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+UnsubscribeRequest.method
+  Input should be 'resources/unsubscribe' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+UnsubscribeRequest.params.uri
+  Field required [type=missing, input_value={'name': 'NacosDeregister...: {'progressToken': 79}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+CallToolRequest.params.arguments
+  Input should be a valid dictionary [type=dict_type, input_value='{"ip": "<instance_ip>", ... "serviceName": "test"}', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/dict_type
+ListToolsRequest.method
+  Input should be 'tools/list' [type=literal_error, input_value='tools/call', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+2025-08-05 15:54:41,287 - INFO - Processing request of type PingRequest
+2025-08-05 15:54:41,297 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:54:41,300 - INFO - 正在删除服务
+2025-08-05 15:54:41,374 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=test
+2025-08-05 15:54:44,753 - INFO - Processing request of type PingRequest
+2025-08-05 15:54:44,755 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:54:44,755 - INFO - 正在查询服务列表
+2025-08-05 15:54:44,829 - INFO - 服务列表查询成功，共有1个服务
+2025-08-05 15:55:22,386 - INFO - Processing request of type PingRequest
+2025-08-05 15:55:22,387 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:55:22,388 - INFO - 正在查询服务test下的端口为8080的实例信息
+2025-08-05 15:55:22,480 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance?ip=192.168.0.1&port=8080&serviceName=test&namespaceId=public&ephemeral=False
+2025-08-05 15:55:29,313 - INFO - Processing request of type PingRequest
+2025-08-05 15:55:29,315 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:55:29,315 - INFO - 正在删除实例test
+2025-08-05 15:55:29,389 - INFO - 成功删除实例
+2025-08-05 15:55:43,042 - INFO - Processing request of type PingRequest
+2025-08-05 15:55:43,045 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:55:43,046 - INFO - 正在查询服务test下的实例列表
+2025-08-05 15:55:43,120 - INFO - 成功获取 0 个实例列表
+2025-08-05 15:55:53,594 - INFO - Processing request of type PingRequest
+2025-08-05 15:55:53,597 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:55:53,597 - INFO - 正在删除服务
+2025-08-05 15:55:53,685 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=test
+2025-08-05 15:55:57,469 - INFO - Processing request of type PingRequest
+2025-08-05 15:55:57,471 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:55:57,471 - INFO - 正在查询服务列表
+2025-08-05 15:55:57,545 - INFO - 服务列表查询成功，共有1个服务
+2025-08-05 15:57:05,879 - INFO - Processing request of type PingRequest
+2025-08-05 15:57:05,881 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:57:05,881 - INFO - 正在查询服务test下的端口为8080的实例信息
+2025-08-05 15:57:05,979 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance?ip=192.168.0.1&port=8080&serviceName=test&namespaceId=public&ephemeral=False
+2025-08-05 15:57:12,406 - INFO - Processing request of type PingRequest
+2025-08-05 15:57:12,408 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:57:12,408 - INFO - 正在删除实例test
+2025-08-05 15:57:12,510 - INFO - 成功删除实例
+2025-08-05 15:57:16,296 - INFO - Processing request of type PingRequest
+2025-08-05 15:57:16,298 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:57:16,299 - INFO - 正在查询服务test下的实例列表
+2025-08-05 15:57:16,373 - INFO - 成功获取 0 个实例列表
+2025-08-05 15:57:19,728 - INFO - Processing request of type PingRequest
+2025-08-05 15:57:19,730 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:57:19,730 - INFO - 正在删除服务
+2025-08-05 15:57:19,804 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=test
+2025-08-05 15:57:23,507 - INFO - Processing request of type PingRequest
+2025-08-05 15:57:23,509 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:57:23,509 - INFO - 正在查询服务列表
+2025-08-05 15:57:23,595 - INFO - 服务列表查询成功，共有1个服务
+2025-08-05 15:58:00,886 - INFO - Processing request of type PingRequest
+2025-08-05 15:58:00,888 - INFO - Processing request of type CallToolRequest
+2025-08-05 15:58:00,889 - INFO - 正在删除实例test
+2025-08-05 15:58:00,967 - INFO - 成功删除实例
