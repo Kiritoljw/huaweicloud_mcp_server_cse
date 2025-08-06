@@ -1279,3 +1279,99 @@ ListToolsRequest.method
 2025-08-05 19:32:30,885 - INFO - Processing request of type CallToolRequest
 2025-08-05 19:32:30,885 - INFO - 正在查询服务ljw下的实例列表
 2025-08-05 19:32:30,976 - INFO - 成功获取 2 个实例列表
+2025-08-06 10:17:05,682 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-06 10:17:05,700 - INFO - Processing request of type ListToolsRequest
+2025-08-06 10:17:30,442 - INFO - Processing request of type PingRequest
+2025-08-06 10:17:30,445 - INFO - Processing request of type CallToolRequest
+2025-08-06 10:17:30,445 - INFO - 正在查询微服务引擎列表:ALL
+2025-08-06 10:17:30,637 - ERROR - HTTP错误：401 - 401 Client Error: Unauthorized for url: https://cse.cn-north-7.myhuaweicloud.com/v2/79c4086f5f3a4e34a92601dfc64b1e8c/enginemgr/engines?limit=10&type=ALL
+2025-08-06 10:17:30,639 - INFO - Warning: InsecureRequestWarning: Unverified HTTPS request is being made to host 'cse.cn-north-7.myhuaweicloud.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2025-08-06 10:18:56,058 - INFO - Processing request of type PingRequest
+2025-08-06 10:18:56,061 - INFO - Processing request of type CallToolRequest
+2025-08-06 10:18:56,061 - INFO - 正在查询服务列表
+2025-08-06 10:18:56,135 - INFO - 服务列表查询成功，共有1个服务
+2025-08-06 10:19:43,780 - INFO - Processing request of type PingRequest
+2025-08-06 10:19:43,783 - INFO - Processing request of type CallToolRequest
+2025-08-06 10:19:43,783 - INFO - 正在查询服务列表
+2025-08-06 10:19:43,857 - INFO - 服务列表查询成功，共有1个服务
+2025-08-06 10:20:07,066 - INFO - Processing request of type PingRequest
+2025-08-06 10:20:07,068 - INFO - Processing request of type CallToolRequest
+2025-08-06 10:20:07,069 - INFO - 正在查询服务详细信息
+2025-08-06 10:20:07,236 - INFO - 成功查询服务详细信息
+2025-08-06 10:20:14,240 - INFO - Processing request of type PingRequest
+2025-08-06 10:20:14,242 - INFO - Processing request of type CallToolRequest
+2025-08-06 10:20:14,242 - INFO - 正在查询服务详细信息
+2025-08-06 10:20:14,441 - INFO - 成功查询服务详细信息
+2025-08-06 10:24:40,628 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-06 10:24:40,641 - INFO - Processing request of type ListToolsRequest
+2025-08-06 10:27:31,241 - INFO - Processing request of type PingRequest
+2025-08-06 10:27:31,243 - INFO - Processing request of type CallToolRequest
+2025-08-06 10:27:31,244 - INFO - 正在查询服务详细信息
+2025-08-06 10:27:31,320 - INFO - 成功查询服务详细信息
+2025-08-06 10:27:33,644 - INFO - Processing request of type PingRequest
+2025-08-06 10:27:33,646 - INFO - Processing request of type ListPromptsRequest
+2025-08-06 10:27:33,683 - INFO - Processing request of type PingRequest
+2025-08-06 10:27:33,686 - INFO - Processing request of type ListResourcesRequest
+2025-08-06 10:27:40,095 - INFO - Processing request of type PingRequest
+2025-08-06 10:27:40,097 - INFO - Processing request of type CallToolRequest
+2025-08-06 10:27:40,098 - INFO - 正在创建服务
+2025-08-06 10:27:40,172 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=ljw&namespaceId=public
+2025-08-06 10:28:06,478 - INFO - Processing request of type PingRequest
+2025-08-06 10:28:06,481 - INFO - Processing request of type CallToolRequest
+2025-08-06 10:28:06,481 - INFO - 正在查询服务ljw下的实例列表
+2025-08-06 10:28:06,567 - INFO - 成功获取 2 个实例列表
+2025-08-06 10:29:48,690 - INFO - Processing request of type PingRequest
+2025-08-06 10:29:48,693 - INFO - Processing request of type ListToolsRequest
+2025-08-06 10:30:00,616 - INFO - Processing request of type PingRequest
+2025-08-06 10:30:00,618 - INFO - Processing request of type CallToolRequest
+2025-08-06 10:30:00,619 - INFO - 正在删除实例ljw
+2025-08-06 10:30:00,701 - INFO - 成功删除实例
+2025-08-06 10:32:47,880 - INFO - Processing request of type PingRequest
+2025-08-06 10:32:47,882 - INFO - Processing request of type CallToolRequest
+2025-08-06 10:32:47,882 - INFO - 正在创建服务
+2025-08-06 10:32:47,957 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/service?serviceName=ljw&namespaceId=public
+2025-08-06 10:41:55,170 - INFO - Processing request of type PingRequest
+2025-08-06 10:41:55,173 - INFO - Processing request of type ListToolsRequest
+2025-08-06 10:42:05,369 - INFO - Processing request of type PingRequest
+2025-08-06 10:42:05,378 - INFO - Processing request of type CallToolRequest
+2025-08-06 10:42:05,378 - INFO - 正在创建服务
+2025-08-06 10:42:05,481 - INFO - 成功创建服务
+2025-08-06 10:47:27,757 - INFO - Processing request of type PingRequest
+2025-08-06 10:47:27,758 - INFO - Processing request of type ListToolsRequest
+2025-08-06 10:47:44,691 - INFO - Processing request of type PingRequest
+2025-08-06 10:47:44,693 - INFO - Processing request of type CallToolRequest
+2025-08-06 10:47:44,693 - INFO - 正在注册实例到服务ljw
+2025-08-06 10:47:44,774 - ERROR - HTTP错误: 500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/instance?ip=127.0.0.3&port=8082&serviceName=ljw&namespaceId=public&ephemeral=True&enabled=False&healthy=True
+2025-08-06 10:48:34,163 - INFO - Processing request of type PingRequest
+2025-08-06 10:48:34,165 - INFO - Processing request of type CallToolRequest
+2025-08-06 10:48:34,165 - INFO - 正在注册实例到服务ljw
+2025-08-06 10:48:34,251 - INFO - 成功注册实例到服务
+2025-08-06 10:49:28,406 - INFO - Processing request of type PingRequest
+2025-08-06 10:49:28,409 - INFO - Processing request of type CallToolRequest
+2025-08-06 10:49:28,409 - INFO - 正在发送心跳
+2025-08-06 10:58:27,586 - INFO - Processing request of type PingRequest
+2025-08-06 10:58:27,588 - INFO - Processing request of type ListToolsRequest
+2025-08-06 11:01:07,676 - INFO - Processing request of type PingRequest
+2025-08-06 11:01:07,678 - INFO - Processing request of type CallToolRequest
+2025-08-06 11:01:07,679 - INFO - 正在修改服务ljw下实例
+2025-08-06 11:01:07,795 - INFO - 成功修改实例
+2025-08-06 11:02:25,428 - INFO - Processing request of type PingRequest
+2025-08-06 11:02:25,430 - INFO - Processing request of type CallToolRequest
+2025-08-06 11:02:25,431 - INFO - 正在查询服务ljw下的端口为8082的实例信息
+2025-08-06 11:02:25,505 - INFO - 成功查询服务ljw下的端口为8082的实例信息
+2025-08-06 15:01:40,558 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-06 15:01:40,584 - INFO - Processing request of type ListToolsRequest
+2025-08-06 15:05:43,692 - INFO - Processing request of type PingRequest
+2025-08-06 15:05:43,697 - INFO - Processing request of type CallToolRequest
+2025-08-06 15:05:43,698 - INFO - 正在查询服务需要查询的服务名称下的实例列表
+2025-08-06 15:05:43,776 - INFO - 成功获取 0 个实例列表
+2025-08-06 15:21:11,092 - INFO - Processing request of type PingRequest
+2025-08-06 15:21:11,094 - INFO - Processing request of type ListToolsRequest
+2025-08-06 15:21:18,854 - INFO - Processing request of type PingRequest
+2025-08-06 15:21:18,857 - INFO - Processing request of type CallToolRequest
+2025-08-06 15:21:18,857 - INFO - 正在查询服务ljw下的实例列表
+2025-08-06 15:21:18,931 - INFO - 成功获取 2 个实例列表
+2025-08-06 15:21:27,649 - INFO - Processing request of type PingRequest
+2025-08-06 15:21:27,651 - INFO - Processing request of type CallToolRequest
+2025-08-06 15:21:27,651 - INFO - 正在查询服务ljw下的实例列表
+2025-08-06 15:21:27,738 - INFO - 成功获取 2 个实例列表

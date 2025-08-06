@@ -402,10 +402,9 @@ def NacosQueryInstanceDetail(ip:str, port:int, serviceName:str , namespaceId:str
         response.raise_for_status()
 
         data = response.json()
-        namespaces = data.get('hosts', [])
 
         logger.info(f"成功查询服务{serviceName}下的端口为{port}的实例信息")
-        return namespaces
+        return data
     
     except requests.exceptions.Timeout:
         logger.error("请求查询服务{serviceName}下的端口为{port}的实例信息超时")
@@ -657,10 +656,9 @@ def NacosQueryService(serviceName:str, namespaceId:str = "public")->list:
         response.raise_for_status()
 
         data = response.json()
-        namespaces = data.get('data', [])
 
         logger.info(f"成功查询服务详细信息")
-        return namespaces
+        return data
     
     except requests.exceptions.Timeout:
         logger.error("查询服务超时")
