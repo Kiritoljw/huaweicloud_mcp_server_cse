@@ -1375,3 +1375,100 @@ ListToolsRequest.method
 2025-08-06 15:21:27,651 - INFO - Processing request of type CallToolRequest
 2025-08-06 15:21:27,651 - INFO - 正在查询服务ljw下的实例列表
 2025-08-06 15:21:27,738 - INFO - 成功获取 2 个实例列表
+2025-08-07 14:53:48,992 - INFO - Processing request of type ListPromptsRequest
+2025-08-07 14:53:49,034 - INFO - Processing request of type PingRequest
+2025-08-07 14:53:49,037 - INFO - Processing request of type ListResourcesRequest
+2025-08-07 14:53:49,109 - INFO - Processing request of type ListPromptsRequest
+2025-08-07 14:53:49,110 - INFO - Processing request of type ListResourcesRequest
+2025-08-07 14:53:49,128 - INFO - Processing request of type ListPromptsRequest
+2025-08-07 14:53:49,129 - INFO - Processing request of type ListResourcesRequest
+2025-08-07 14:54:19,389 - INFO - Processing request of type PingRequest
+2025-08-07 14:54:19,393 - INFO - Processing request of type ListToolsRequest
+2025-08-07 14:54:30,004 - INFO - Processing request of type PingRequest
+2025-08-07 14:54:30,008 - INFO - Processing request of type CallToolRequest
+2025-08-07 14:54:30,008 - INFO - 正在查询系统开关
+2025-08-07 14:54:30,116 - INFO - 系统开关查询成功
+2025-08-07 14:59:32,227 - INFO - Processing request of type PingRequest
+2025-08-07 14:59:32,229 - INFO - Processing request of type ListToolsRequest
+2025-08-07 14:59:42,583 - INFO - Processing request of type PingRequest
+2025-08-07 14:59:42,585 - INFO - Processing request of type CallToolRequest
+2025-08-07 14:59:42,585 - INFO - 正在查看系统当前数据指标
+2025-08-07 14:59:42,661 - INFO - 查看系统当前数据指标成功
+2025-08-07 15:01:47,409 - INFO - Processing request of type PingRequest
+2025-08-07 15:01:47,412 - INFO - Processing request of type CallToolRequest
+2025-08-07 15:01:47,413 - INFO - 正在查看当前集群leader
+2025-08-07 15:01:47,490 - INFO - 查看当前集群Server列表成功
+2025-08-07 15:04:30,910 - INFO - Processing request of type PingRequest
+2025-08-07 15:04:30,912 - INFO - Processing request of type CallToolRequest
+2025-08-07 15:04:30,912 - INFO - 正在查看当前集群leader
+2025-08-07 15:04:31,002 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/raft/leader
+2025-08-07 15:04:34,313 - INFO - Processing request of type PingRequest
+2025-08-07 15:04:34,314 - INFO - Processing request of type CallToolRequest
+2025-08-07 15:04:34,314 - INFO - 正在查看当前集群leader
+2025-08-07 15:04:34,389 - ERROR - HTTP错误：500 - 500 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/raft/leader
+2025-08-07 15:06:48,218 - INFO - Processing request of type PingRequest
+2025-08-07 15:06:48,220 - INFO - Processing request of type ListToolsRequest
+2025-08-07 15:07:02,869 - INFO - Processing request of type PingRequest
+2025-08-07 15:07:02,872 - INFO - Processing request of type CallToolRequest
+2025-08-07 15:07:02,872 - INFO - 正在查询服务ljw下的实例列表
+2025-08-07 15:07:02,961 - INFO - 成功获取 2 个实例列表
+2025-08-07 15:07:59,829 - INFO - Processing request of type PingRequest
+2025-08-07 15:07:59,831 - INFO - Processing request of type CallToolRequest
+2025-08-07 15:07:59,831 - INFO - 正在查询服务ljw下的实例列表
+2025-08-07 15:07:59,905 - INFO - 成功获取 2 个实例列表
+2025-08-07 15:12:05,635 - INFO - Processing request of type PingRequest
+2025-08-07 15:12:05,637 - INFO - Processing request of type ListToolsRequest
+2025-08-07 15:12:46,619 - INFO - Processing request of type PingRequest
+2025-08-07 15:12:46,622 - INFO - Processing request of type CallToolRequest
+2025-08-07 15:12:46,622 - INFO - 正在查询服务ljw下的实例列表
+2025-08-07 15:12:46,696 - INFO - 成功获取 2 个实例列表
+2025-08-07 15:13:37,417 - INFO - Processing request of type PingRequest
+2025-08-07 15:13:37,419 - INFO - Processing request of type CallToolRequest
+2025-08-07 15:13:37,419 - INFO - 正在查询服务ljw下的实例列表
+2025-08-07 15:13:37,497 - INFO - 成功获取 2 个实例列表
+2025-08-07 15:13:47,220 - INFO - Processing request of type PingRequest
+2025-08-07 15:13:47,223 - INFO - Processing request of type CallToolRequest
+2025-08-07 15:13:47,223 - INFO - 正在查询服务ljw下的实例列表
+2025-08-07 15:13:47,297 - INFO - 成功获取 2 个实例列表
+2025-08-07 15:14:06,162 - INFO - Processing request of type PingRequest
+2025-08-07 15:14:06,164 - INFO - Processing request of type CallToolRequest
+2025-08-07 15:14:06,164 - INFO - 正在查询服务ljw下的实例列表
+2025-08-07 15:14:06,238 - INFO - 成功获取 2 个实例列表
+2025-08-07 15:15:58,920 - INFO - Processing request of type PingRequest
+2025-08-07 15:15:58,923 - INFO - Processing request of type CallToolRequest
+2025-08-07 15:15:58,923 - INFO - 正在查询服务ljw下的实例列表
+2025-08-07 15:15:59,000 - INFO - 成功获取 2 个实例列表
+2025-08-07 15:16:20,739 - INFO - Processing request of type PingRequest
+2025-08-07 15:16:20,741 - INFO - Processing request of type CallToolRequest
+2025-08-07 15:16:20,741 - INFO - 正在查询服务ljw下的实例列表
+2025-08-07 15:16:20,819 - INFO - 成功获取 2 个实例列表
+2025-08-07 15:19:34,027 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-07 15:19:34,042 - INFO - Processing request of type ListToolsRequest
+2025-08-07 15:21:00,465 - INFO - Processing request of type PingRequest
+2025-08-07 15:21:00,468 - INFO - Processing request of type CallToolRequest
+2025-08-07 15:21:00,468 - INFO - 正在查询服务ljw下的实例列表
+2025-08-07 15:21:00,552 - INFO - 成功获取 2 个实例列表
+2025-08-07 15:21:24,445 - INFO - Processing request of type PingRequest
+2025-08-07 15:21:24,448 - INFO - Processing request of type CallToolRequest
+2025-08-07 15:21:24,448 - INFO - 正在查询服务ljw下的实例列表
+2025-08-07 15:21:24,524 - INFO - 成功获取 2 个实例列表
+2025-08-07 15:23:02,868 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-07 15:23:02,880 - INFO - Processing request of type CallToolRequest
+2025-08-07 15:23:02,881 - INFO - 正在查询服务ljw下的实例列表
+2025-08-07 15:23:02,959 - INFO - 成功获取 2 个实例列表
+2025-08-07 15:28:43,040 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-07 15:28:43,058 - INFO - Processing request of type ListToolsRequest
+2025-08-07 15:28:53,403 - INFO - Processing request of type PingRequest
+2025-08-07 15:28:53,406 - INFO - Processing request of type CallToolRequest
+2025-08-07 15:28:53,406 - INFO - 正在查询服务ljw下的实例列表
+2025-08-07 15:28:53,485 - INFO - 成功获取 2 个实例列表
+2025-08-07 15:30:11,208 - INFO - Processing request of type PingRequest
+2025-08-07 15:30:11,210 - INFO - Processing request of type CallToolRequest
+2025-08-07 15:30:11,211 - INFO - 正在更新实例健康状态
+2025-08-07 15:30:11,285 - ERROR - HTTP错误：501 - 501 Server Error:  for url: http://100.85.123.17:8848/nacos/v1/ns/health/instance?serviceName=ljw&ip=127.0.0.1&port=8080&clusterName=DEFAULT&healthy=True&namespaceId=public
+2025-08-07 15:49:47,695 - INFO - Processing request of type PingRequest
+2025-08-07 15:49:47,698 - INFO - Processing request of type ListToolsRequest
+2025-08-07 15:49:59,229 - INFO - Processing request of type PingRequest
+2025-08-07 15:49:59,232 - INFO - Processing request of type CallToolRequest
+2025-08-07 15:49:59,232 - INFO - 正在获取所有MCP工具列表
+2025-08-07 15:49:59,232 - ERROR - 获取MCP工具列表失败：'FastMCP' object has no attribute 'tools'

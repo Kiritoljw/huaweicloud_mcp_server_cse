@@ -165,7 +165,7 @@ def NacosRegisterInstance(ip:str, port:int, serviceName:str , namespaceId:str = 
         enabled (bool) : enabled or not
         healthy (bool) : healthy or not
     Return:
-        dict: ok
+        text : ok
     """
     base_url = "http://100.85.123.17:8848/nacos/v1"
     url = f"{base_url}/ns/instance"
@@ -218,7 +218,7 @@ def NacosDeregisterInstance(ip:str, port:int, serviceName:str , namespaceId:str 
         port (int) : Port of instance
         servicename (str) : Name of the service to delete
     Return:
-        dict: ok
+        text : ok
     """
     base_url = "http://100.85.123.17:8848/nacos/v1"
     url = f"{base_url}/ns/instance"
@@ -272,7 +272,7 @@ def NacosModifyInstance(ip:str, port:int, serviceName:str , namespaceId:str = "p
         ephemeral (bool) : if instance is ephemeral
         enabled (bool) : enabled or not
     Return:
-        dict: ok
+        text : ok
     """
     base_url = "http://100.85.123.17:8848/nacos/v1"
     url = f"{base_url}/ns/instance"
@@ -323,8 +323,9 @@ def NacosQueryInstances(serviceName:str , namespaceId:str="public" , healthyOnly
         servicename (str) : Name of the service to query
         namespaceId (str) : Id of namespace
         healthyOnly (bool) : return healthy only or not
-    Return:
 
+    return: 
+        list
     """
     base_url =  "http://100.85.123.17:8848/nacos/v1"
     url = f"{base_url}/ns/instance/list"
@@ -367,7 +368,7 @@ def NacosQueryInstances(serviceName:str , namespaceId:str="public" , healthyOnly
         return {"error": "服务内部错误"}
     
 @mcp.tool()    
-def NacosQueryInstanceDetail(ip:str, port:int, serviceName:str , namespaceId:str = "public" ,  ephemeral:bool = False )->list:
+def NacosQueryInstanceDetail(ip:str, port:int, serviceName:str , namespaceId:str = "public" ,  ephemeral:bool = False )->dict:
     """
     Description : Query instance details of service.
 
@@ -379,7 +380,20 @@ def NacosQueryInstanceDetail(ip:str, port:int, serviceName:str , namespaceId:str
         ephemeral (bool) : if instance is ephemeral
 
     Return:
-        list
+        dict
+            instanceId: 实例的唯一标识，格式为 IP#Port#Cluster#GroupName@ServiceName。
+            ip: 实例的 IP 地址。
+            port: 实例的端口。
+            weight: 实例的权重，影响负载均衡时的请求分配。
+            healthy: 实例的健康状态（true 表示健康）。
+            enabled: 实例是否启用（true 表示启用）。
+            ephemeral: 实例是否为临时实例（true 表示临时）。
+            clusterName: 实例所属的集群名称。
+            serviceName: 实例对应的服务名称。
+            metadata: 实例的元数据（为空表示无额外信息）。
+            instanceHeartBeatInterval: 实例心跳间隔（单位：毫秒），用于检测实例的存活状态。
+            instanceHeartBeatTimeOut: 实例心跳超时时间（单位：毫秒）。
+            ipDeleteTimeout: 当实例被检测为不可用时，IP地址从服务列表中删除的超时时间（单位：毫秒）。
     """
     base_url =  "http://100.85.123.17:8848/nacos/v1"
     url = f"{base_url}/ns/instance"
@@ -437,7 +451,6 @@ def NacosSendInstanceBeat(ip:str, port:int, serviceName:str, namespaceId:str = "
     Return:
         ok
     """
-    import json
     base_url = "http://100.85.123.17:8848/nacos/v1"
     url = f"{base_url}/ns/instance/beat"
 
@@ -581,7 +594,7 @@ def NacosDeleteService(serviceName:str, namespaceId:str = "public"):
         return {"error": "服务内部错误"}
     
 @mcp.tool()    
-def NacosUpdateService(serviceName:str, namespaceId:str = "public")->list:
+def NacosUpdateService(serviceName:str, namespaceId:str = "public"):
     """
     Description:Update a service.
 
@@ -628,7 +641,7 @@ def NacosUpdateService(serviceName:str, namespaceId:str = "public")->list:
         return {"error": "服务内部错误"}
     
 @mcp.tool()    
-def NacosQueryService(serviceName:str, namespaceId:str = "public")->list:
+def NacosQueryService(serviceName:str, namespaceId:str = "public"):
     """
     Description:Query a service.
 
@@ -677,7 +690,7 @@ def NacosQueryService(serviceName:str, namespaceId:str = "public")->list:
         return {"error": "服务内部错误"}
     
 @mcp.tool()    
-def NacosQueryServiceList(pageNo:int = 1, pageSize:int = 10, namespaceId:str = "public")->list:
+def NacosQueryServiceList(pageNo:int = 1, pageSize:int = 10, namespaceId:str = "public"):
     """
     Description:Query service list.
 
@@ -730,7 +743,7 @@ def NacosQueryServiceList(pageNo:int = 1, pageSize:int = 10, namespaceId:str = "
         return {"error": "服务内部错误"}
 
 @mcp.tool()
-def QuerySystemSwitches()->list:
+def QuerySystemSwitches()->dict:
     """
     Description : Query system switches.
 
@@ -738,7 +751,7 @@ def QuerySystemSwitches()->list:
         None 
 
     Return: 
-        list
+        dict
     """
     base_url = "http://100.85.123.17:8848/nacos/v1"
     url = f"{base_url}/ns/operator/switches"
@@ -774,7 +787,7 @@ def QuerySystemSwitches()->list:
         return {"error": "服务内部错误"}
 
 @mcp.tool()
-def UpdateSystemSwitches(entry:str , value:str , debug:bool=True)->list:
+def UpdateSystemSwitches(entry:str , value:str , debug:bool=True)->dict:
     """
     Description : Update system switch.
 
@@ -784,7 +797,8 @@ def UpdateSystemSwitches(entry:str , value:str , debug:bool=True)->list:
         debug (bool) : if affect the local server, true means yes, false means no, default true
 
     Return: 
-        list
+        dict
+
     """
     base_url = "http://100.85.123.17:8848/nacos/v1"
     url = f"{base_url}/ns/operator/switches"
@@ -826,7 +840,7 @@ def UpdateSystemSwitches(entry:str , value:str , debug:bool=True)->list:
         return {"error": "服务内部错误"}
     
 @mcp.tool()
-def QuerySystemMetrics()->list:
+def QuerySystemMetrics()->dict:
     """
     Description : Update system switch.
 
@@ -834,7 +848,7 @@ def QuerySystemMetrics()->list:
         None
 
     Return: 
-        list
+        dict
     """
     base_url = "http://100.85.123.17:8848/nacos/v1"
     url = f"{base_url}/ns/operator/metrics"
@@ -871,7 +885,7 @@ def QuerySystemMetrics()->list:
         return {"error": "服务内部错误"}
 
 @mcp.tool()
-def QueryServerList()->list:
+def QueryServerList()->dict:
     """
     Description : Query server list.
 
@@ -917,15 +931,15 @@ def QueryServerList()->list:
         return {"error": "服务内部错误"}
     
 @mcp.tool()
-def QueryClusterLeader()->list:
+def QueryClusterLeader()->dict:
     """
     Description : Query the leader of current cluster.
-
+                caused: old raft protocol already stop; 该api暂时无法调用
     Args: 
         None
 
     Return: 
-        list
+        dict
     """
     base_url = "http://100.85.123.17:8848/nacos/v1"
     url = f"{base_url}/ns/raft/leader"
@@ -963,15 +977,16 @@ def QueryClusterLeader()->list:
         return {"error": "服务内部错误"}
 
 @mcp.tool()
-def UpdateInstanceHealthStatus(serviceName:str, ip:str, port:int, clusterName:str, healthy:bool=True, namespaceId:str="public")->list:
+def UpdateInstanceHealthStatus(serviceName:str, ip:str, port:int, clusterName:str, healthy:bool=True, namespaceId:str="public"):
     """
     Description : Update instance health status, only works when the cluster health checker is set to NONE.
+                  更新实例的健康状态,仅在集群的健康检查关闭时才生效,当集群配置了健康检查时,该接口会返回错误。
 
     Args: 
         None
 
     Return: 
-        list
+        ok
     """
     base_url = "http://100.85.123.17:8848/nacos/v1"
     url = f"{base_url}/ns/health/instance"
@@ -1074,6 +1089,33 @@ def ListNacosNamespaces() -> list:
 # @mcp.tool()
 # def UpdateNacosNamespaces() -> list:
 #     return
+
+@mcp.tool()
+def list_tools() -> list:
+    """
+    功能 : 列出所有可用的MCP工具函数。
+    
+    Returns:
+        list: 包含所有MCP工具函数名称和描述的列表
+    """
+    try:
+        logger.info("正在获取所有MCP工具列表")
+        tools = []
+        
+        # 通过FastMCP实例的内部结构获取工具列表
+        for tool_name, tool_info in mcp.tools.items():
+            tool_description = tool_info['fn'].__doc__.strip() if tool_info['fn'].__doc__ else "无描述"
+            tools.append({
+                "name": tool_name,
+                "description": tool_description
+            })
+        
+        logger.info(f"成功获取 {len(tools)} 个工具")
+        return tools
+    except Exception as e:
+        logger.error(f"获取MCP工具列表失败：{e}")
+        return {"error": "获取工具列表失败"}
+
 
 if __name__ == "__main__":
     mcp.run(transport="sse")
