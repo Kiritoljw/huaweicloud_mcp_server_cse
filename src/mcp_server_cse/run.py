@@ -729,6 +729,289 @@ def NacosQueryServiceList(pageNo:int = 1, pageSize:int = 10, namespaceId:str = "
         logger.error(f"查询服务列表未预期错误：{e}")
         return {"error": "服务内部错误"}
 
+@mcp.tool()
+def QuerySystemSwitches()->list:
+    """
+    Description : Query system switches.
+
+    Args: 
+        None 
+
+    Return: 
+        list
+    """
+    base_url = "http://100.85.123.17:8848/nacos/v1"
+    url = f"{base_url}/ns/operator/switches"
+
+    headers = {
+        'X-Auth-Token' : TOKEN,
+        'content-Type' : 'application/json'
+    }
+    try:
+        logger.info(f"正在查询系统开关")
+        response = requests.get(url, headers=headers, verify=False, timeout=30)
+        response.raise_for_status()
+
+        data = response.json()
+
+        logger.info(f"系统开关查询成功")
+        return data
+    
+    except requests.exceptions.Timeout:
+        logger.error("系统开关查询超时")
+        return {"error": "请求超时"}
+    except requests.exceptions.HTTPError as e:
+        logger.error(f"HTTP错误：{e.response.status_code} - {e}")
+        return {"error": f"HTTP错误: {e.response.status_code}"}
+    except requests.exceptions.RequestException as e:
+        logger.error(f"查询系统开关失败：{e}")
+        return {"error": "网络请求失败"}
+    except ValueError as e:
+        logger.error(f"查询系统开关JSON解析失败：{e}")
+        return {"error": "响应格式错误"}
+    except Exception as e:
+        logger.error(f"查询系统开关未预期错误：{e}")
+        return {"error": "服务内部错误"}
+
+@mcp.tool()
+def UpdateSystemSwitches(entry:str , value:str , debug:bool=True)->list:
+    """
+    Description : Update system switch.
+
+    Args: 
+        entry (str) : switch name
+        value (str) : switch value
+        debug (bool) : if affect the local server, true means yes, false means no, default true
+
+    Return: 
+        list
+    """
+    base_url = "http://100.85.123.17:8848/nacos/v1"
+    url = f"{base_url}/ns/operator/switches"
+
+    params = {
+        'entry' : entry,
+        'value' : value,
+        'debug' : debug
+    }
+
+    headers = {
+        'X-Auth-Token' : TOKEN,
+        'content-Type' : 'application/json'
+    }
+    try:
+        logger.info(f"正在修改系统开关")
+        response = requests.put(url, params=params, headers=headers, verify=False, timeout=30)
+        response.raise_for_status()
+
+        data = response.json()
+
+        logger.info(f"修改系统开关成功")
+        return data
+    
+    except requests.exceptions.Timeout:
+        logger.error("修改系统开关超时")
+        return {"error": "请求超时"}
+    except requests.exceptions.HTTPError as e:
+        logger.error(f"HTTP错误：{e.response.status_code} - {e}")
+        return {"error": f"HTTP错误: {e.response.status_code}"}
+    except requests.exceptions.RequestException as e:
+        logger.error(f"修改系统开关失败：{e}")
+        return {"error": "网络请求失败"}
+    except ValueError as e:
+        logger.error(f"修改系统开关JSON解析失败：{e}")
+        return {"error": "响应格式错误"}
+    except Exception as e:
+        logger.error(f"修改系统开关未预期错误：{e}")
+        return {"error": "服务内部错误"}
+    
+@mcp.tool()
+def QuerySystemMetrics()->list:
+    """
+    Description : Update system switch.
+
+    Args: 
+        None
+
+    Return: 
+        list
+    """
+    base_url = "http://100.85.123.17:8848/nacos/v1"
+    url = f"{base_url}/ns/operator/metrics"
+
+
+    headers = {
+        'X-Auth-Token' : TOKEN,
+        'content-Type' : 'application/json'
+    }
+    try:
+        logger.info(f"正在查看系统当前数据指标")
+        response = requests.get(url, headers=headers, verify=False, timeout=30)
+        response.raise_for_status()
+
+        data = response.json()
+
+        logger.info(f"查看系统当前数据指标成功")
+        return data
+    
+    except requests.exceptions.Timeout:
+        logger.error("查看系统当前数据指标超时")
+        return {"error": "请求超时"}
+    except requests.exceptions.HTTPError as e:
+        logger.error(f"HTTP错误：{e.response.status_code} - {e}")
+        return {"error": f"HTTP错误: {e.response.status_code}"}
+    except requests.exceptions.RequestException as e:
+        logger.error(f"查看系统当前数据指标失败：{e}")
+        return {"error": "网络请求失败"}
+    except ValueError as e:
+        logger.error(f"查看系统当前数据指标JSON解析失败：{e}")
+        return {"error": "响应格式错误"}
+    except Exception as e:
+        logger.error(f"查看系统当前数据指标未预期错误：{e}")
+        return {"error": "服务内部错误"}
+
+@mcp.tool()
+def QueryServerList()->list:
+    """
+    Description : Query server list.
+
+    Args: 
+        None
+
+    Return: 
+        list
+    """
+    base_url = "http://100.85.123.17:8848/nacos/v1"
+    url = f"{base_url}/ns/operator/servers"
+
+
+    headers = {
+        'X-Auth-Token' : TOKEN,
+        'content-Type' : 'application/json'
+    }
+    try:
+        logger.info(f"正在查看当前集群leader")
+        response = requests.get(url, headers=headers, verify=False, timeout=30)
+        response.raise_for_status()
+
+        data = response.json()
+        leader = data.get('servers',[])
+
+        logger.info(f"查看当前集群Server列表成功")
+        return leader
+    
+    except requests.exceptions.Timeout:
+        logger.error("查看当前集群Server列表超时")
+        return {"error": "请求超时"}
+    except requests.exceptions.HTTPError as e:
+        logger.error(f"HTTP错误：{e.response.status_code} - {e}")
+        return {"error": f"HTTP错误: {e.response.status_code}"}
+    except requests.exceptions.RequestException as e:
+        logger.error(f"查看当前集群Server列表失败：{e}")
+        return {"error": "网络请求失败"}
+    except ValueError as e:
+        logger.error(f"查看当前集群Server列表JSON解析失败：{e}")
+        return {"error": "响应格式错误"}
+    except Exception as e:
+        logger.error(f"查看当前集群Server列表未预期错误：{e}")
+        return {"error": "服务内部错误"}
+    
+@mcp.tool()
+def QueryClusterLeader()->list:
+    """
+    Description : Query the leader of current cluster.
+
+    Args: 
+        None
+
+    Return: 
+        list
+    """
+    base_url = "http://100.85.123.17:8848/nacos/v1"
+    url = f"{base_url}/ns/raft/leader"
+
+
+    headers = {
+        'X-Auth-Token' : TOKEN,
+        'content-Type' : 'application/json'
+    }
+    try:
+        logger.info(f"正在查看当前集群leader")
+        response = requests.get(url, headers=headers, verify=False, timeout=30)
+        response.raise_for_status()
+
+        data = response.json()
+        leader = data.get('leader',{})
+
+        logger.info(f"查看当前集群leader成功")
+        return leader
+    
+    except requests.exceptions.Timeout:
+        logger.error("查看当前集群leader超时")
+        return {"error": "请求超时"}
+    except requests.exceptions.HTTPError as e:
+        logger.error(f"HTTP错误：{e.response.status_code} - {e}")
+        return {"error": f"HTTP错误: {e.response.status_code}"}
+    except requests.exceptions.RequestException as e:
+        logger.error(f"查看当前集群leader失败：{e}")
+        return {"error": "网络请求失败"}
+    except ValueError as e:
+        logger.error(f"查看当前集群leaderJSON解析失败：{e}")
+        return {"error": "响应格式错误"}
+    except Exception as e:
+        logger.error(f"查看当前集群leader未预期错误：{e}")
+        return {"error": "服务内部错误"}
+
+@mcp.tool()
+def UpdateInstanceHealthStatus(serviceName:str, ip:str, port:int, clusterName:str, healthy:bool=True, namespaceId:str="public")->list:
+    """
+    Description : Update instance health status, only works when the cluster health checker is set to NONE.
+
+    Args: 
+        None
+
+    Return: 
+        list
+    """
+    base_url = "http://100.85.123.17:8848/nacos/v1"
+    url = f"{base_url}/ns/health/instance"
+
+    params = {
+        'serviceName' : serviceName,
+        'ip' : ip,
+        'port' : port,
+        'clusterName' : clusterName,
+        'healthy' : healthy,
+        'namespaceId' : namespaceId
+    }
+
+    headers = {
+        'X-Auth-Token' : TOKEN,
+        'content-Type' : 'application/json'
+    }
+    try:
+        logger.info(f"正在更新实例健康状态")
+        response = requests.get(url, params=params, headers=headers, verify=False, timeout=30)
+        response.raise_for_status()
+        if response.text.strip() == 'ok':
+            logger.info(f"成功更新实例健康状态")
+        return response
+
+    except requests.exceptions.Timeout:
+        logger.error("更新实例健康状态超时")
+        return {"error": "请求超时"}
+    except requests.exceptions.HTTPError as e:
+        logger.error(f"HTTP错误：{e.response.status_code} - {e}")
+        return {"error": f"HTTP错误: {e.response.status_code}"}
+    except requests.exceptions.RequestException as e:
+        logger.error(f"更新实例健康状态失败：{e}")
+        return {"error": "网络请求失败"}
+    except ValueError as e:
+        logger.error(f"更新实例健康状态解析失败：{e}")
+        return {"error": "响应格式错误"}
+    except Exception as e:
+        logger.error(f"更新实例健康状态未预期错误：{e}")
+        return {"error": "服务内部错误"}
 
 #--------------------------------------------------------------------------Nacos命名空间--------------------------------------------------------------------------#
 # @mcp.tool()
