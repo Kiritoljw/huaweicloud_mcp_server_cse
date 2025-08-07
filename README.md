@@ -58,7 +58,7 @@ Cover all apis, use as needed, the list and status are as follows:
                     <td>To be tested</td>
                 </tr>
                 <tr>
-                    <td rowspan="23">nacos</td>
+                    <td rowspan="21">nacos</td>
                     <td>Register instance</td>
                     <td>注册实例。</td>
                     <td>Done</td>
@@ -86,12 +86,12 @@ Cover all apis, use as needed, the list and status are as follows:
                 <tr>
                     <td>Send instance beat</td>
                     <td>发送实例心跳</td>
-                    <td>To be tested</td>
+                    <td>Done</td>
                 </tr>
                 <tr>
                     <td>Create service</td>
                     <td>创建服务</td>
-                    <td>To be tested</td>
+                    <td>Done</td>
                 </tr>
                 <tr>
                     <td>Delete service</td>
@@ -101,57 +101,47 @@ Cover all apis, use as needed, the list and status are as follows:
                 <tr>
                     <td>Update service</td>
                     <td>更新服务</td>
-                    <td>To be tested</td>
+                    <td>Done</td>
                 </tr>
                 <tr>
                     <td>Query service</td>
                     <td>查询服务</td>
-                    <td>To be tested</td>
+                    <td>Done</td>
                 </tr>
                 <tr>
                     <td>Query service list</td>
                     <td>查询服务列表</td>
-                    <td>To be tested</td>
+                    <td>Done</td>
                 </tr>
                 <tr>
                     <td>Query system switches</td>
                     <td>查询系统开关</td>
-                    <td>To be tested</td>
+                    <td>Done</td>
                 </tr>
                 <tr>
                     <td>Update system switch</td>
                     <td>修改系统开关</td>
-                    <td>To be tested</td>
+                    <td>Done</td>
                 </tr>
                 <tr>
                     <td>Query system metrics</td>
                     <td>查看系统当前数据指标</td>
-                    <td>To be tested</td>
+                    <td>Done</td>
                 </tr>
                 <tr>
                     <td>Query server list</td>
                     <td>查看当前集群Server列表</td>
-                    <td>To be tested</td>
+                    <td>Done</td>
                 </tr>
                 <tr>
                     <td>Query the leader of current cluster</td>
                     <td>查看当前集群leader</td>
-                    <td>To be tested</td>
+                    <td>Done</td>
                 </tr>
                 <tr>
                     <td>Update instance health status</td>
                     <td>更新实例的健康状态</td>
-                    <td>To be tested</td>
-                </tr>
-                <tr>
-                    <td>Batch update instance metadata(Beta)</td>
-                    <td>批量更新实例元数据(Beta)</td>
-                    <td>To be tested</td>
-                </tr>
-                <tr>
-                    <td>Batch delete instance metadata(Beta)</td>
-                    <td>批量删除实例元数据(Beta)</td>
-                    <td>To be tested</td>
+                    <td>Done</td>
                 </tr>
                 <tr>
                     <td>ListNacosNamespaces</td>
