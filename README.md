@@ -96,7 +96,7 @@ Cover all apis, use as needed, the list and status are as follows:
                 <tr>
                     <td>Delete service</td>
                     <td>删除服务</td>
-                    <td>To be tested</td>
+                    <td>Done</td>
                 </tr>
                 <tr>
                     <td>Update service</td>
@@ -151,17 +151,17 @@ Cover all apis, use as needed, the list and status are as follows:
                 <tr>
                     <td>DeleteNacosNamespaces</td>
                     <td>删除nacos命名空间。</td>
-                    <td>To be tested</td>
+                    <td>Done</td>
                 </tr>
                 <tr>
                     <td>UpdateNacosNamespaces</td>
                     <td>更新nacos命名空间。</td>
-                    <td>To be tested</td>
+                    <td>Done</td>
                 </tr>
                 <tr>
                     <td>CreateNacosNamespaces</td>
                     <td>创建nacos命名空间。</td>
-                    <td>To be tested</td>
+                    <td>Done</td>
                 </tr>
                 <tr>
                     <td rowspan="1">引擎版本和规格</td>
