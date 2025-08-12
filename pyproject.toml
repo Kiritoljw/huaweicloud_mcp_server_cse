@@ -1,0 +1,16 @@
+[project]
+name = "huaweicloud-mcp-server-cse"
+version = "0.1.0"
+description = " Model Context Protocol Server for Huawei Cloud CSE Nacos"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.104.0",
+    "httpx>=0.25.0",
+    "requests>=2.31.0",
+    "uvicorn>=0.23.2",
+    "pydantic>=2.4.2",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mcp_server_cse"]

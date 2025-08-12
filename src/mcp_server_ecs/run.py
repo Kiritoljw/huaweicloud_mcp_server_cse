@@ -1,7 +1,5 @@
 from mcp.server.fastmcp import FastMCP
-import os
 import logging
-import httpx
 import requests
 
 
