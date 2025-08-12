@@ -1090,32 +1090,6 @@ def ListNacosNamespaces() -> list:
 # def UpdateNacosNamespaces() -> list:
 #     return
 
-@mcp.tool()
-def list_tools() -> list:
-    """
-    功能 : 列出所有可用的MCP工具函数。
-    
-    Returns:
-        list: 包含所有MCP工具函数名称和描述的列表
-    """
-    try:
-        logger.info("正在获取所有MCP工具列表")
-        tools = []
-        
-        # 通过FastMCP实例的内部结构获取工具列表
-        for tool_name, tool_info in mcp.tools.items():
-            tool_description = tool_info['fn'].__doc__.strip() if tool_info['fn'].__doc__ else "无描述"
-            tools.append({
-                "name": tool_name,
-                "description": tool_description
-            })
-        
-        logger.info(f"成功获取 {len(tools)} 个工具")
-        return tools
-    except Exception as e:
-        logger.error(f"获取MCP工具列表失败：{e}")
-        return {"error": "获取工具列表失败"}
-
 
 if __name__ == "__main__":
     mcp.run(transport="sse")
