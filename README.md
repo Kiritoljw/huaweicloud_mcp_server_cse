@@ -1,11 +1,11 @@
-# HuaweiCloud_mcp_server_cse
+# HuaweiCloud_nacos_mcp_server
 
 ## Version
 v0.1.0
 
 ## Overview
 
-CSE MCP Server is a Model Context Protocol (Model Context Protocol) server, providing the ability for MCP clients (such as Cherry Studio, Claude Desktop, Cline, Cursor) to interact with Huawei Cloud service CSE. Full-chain management of CSE nacos resources can be carried out based on natural language.
+HuaweiCloud Nacos-MCP-Server is a Model Context Protocol (Model Context Protocol) server, providing the ability for MCP clients (such as Cherry Studio, Claude Desktop, Cline, Cursor) to interact with Huawei Cloud service CSE. Full-chain management of HuaweiCloud nacos resources can be carried out based on natural language.
 
 ## Available Tools
 Cover all apis, use as needed, the list and status are as follows:
