@@ -9,7 +9,7 @@ v0.1.0
 HuaweiCloud Nacos-MCP-Server is a Model Context Protocol (Model Context Protocol) server, providing the ability for MCP clients (such as Cherry Studio, Claude Desktop, Cline, Cursor) to interact with Huawei Cloud CSE Nacos service. Full-chain management of HuaweiCloud nacos resources can be carried out based on natural language.
 
 ```markdown
-1. Nacos version required  `2.x`, because of depended on the [Nacos Admin API](https://nacos.io/zh-cn/docs/open-api.html) in 2.x.
+1. Nacos version required  `2.x`, because of depended on the [Nacos Open API](https://nacos.io/zh-cn/docs/open-api.html) in 2.x.
 2. python version recommend upper `3.11`.
 ```
 
