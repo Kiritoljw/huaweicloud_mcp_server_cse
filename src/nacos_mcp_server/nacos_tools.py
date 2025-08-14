@@ -73,11 +73,29 @@ class NacosClient:
             response.raise_for_status()
             
             # 处理不同类型的响应
+            response_text = response.text.strip()
             content_type = response.headers.get('content-type', '').lower()
+            
+            # 特殊处理 Nacos 常见的成功响应
+            if response_text == 'ok':
+                self.logger.debug(f"收到成功响应: {response_text}")
+                return {"success": True, "message": "操作成功"}
+            
             if 'application/json' in content_type:
-                return response.json()
+                try:
+                    return response.json()
+                except ValueError as json_error:
+                    # JSON 解析失败，检查是否是简单的文本响应
+                    if response_text:
+                        self.logger.debug(f"收到非JSON响应: '{response_text}'")
+                        # 对于简单的文本响应，返回包装后的结构
+                        return {"success": True, "message": response_text}
+                    else:
+                        self.logger.warning(f"JSON解析失败且响应为空: {json_error}")
+                        return {"error": "响应为空"}
             else:
-                return response.text.strip()
+                # 非JSON响应，直接返回文本内容（如果有的话）
+                return {"success": True, "message": response_text} if response_text else {"error": "响应为空"}
                 
         except requests.exceptions.Timeout:
             error_msg = f"{method} {endpoint} 请求超时"
