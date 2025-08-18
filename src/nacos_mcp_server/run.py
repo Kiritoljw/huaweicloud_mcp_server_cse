@@ -32,7 +32,7 @@ settings.host = 8000
 # 配置信息
 TOKEN = "your_token_here"  # 从环境变量或配置文件读取
 PROJECT_ID = "79c4086f5f3a4e34a92601dfc64b1e8c" # API Explorer查询
-NACOS_URL = "http://100.85.123.17:8848/nacos/v1" #由于乌兰三nacosAPI未注册到公网，目前需要VPN，或者自己注册一个公网ip
+NACOS_URL = "http://100.85.123.17:8848/nacos/v1" 
 
 # 创建 Nacos 客户端
 nacos_client = create_nacos_client(NACOS_URL, TOKEN, PROJECT_ID)
