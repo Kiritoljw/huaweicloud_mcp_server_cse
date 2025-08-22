@@ -2,6 +2,9 @@ from mcp.server.fastmcp import FastMCP
 from mcp.server.fastmcp.server import Settings
 import logging
 from nacos_tools import create_nacos_client
+from nacos_mcp_wrapper.server.nacos_mcp import NacosMCP
+from nacos_mcp_wrapper.server.nacos_settings import NacosSettings
+
 
 # 日志配置
 logger = logging.getLogger()
@@ -20,13 +23,21 @@ file_handler.setFormatter(formatter)
 logger.addHandler(console_handler)
 logger.addHandler(file_handler)
 
-# Initialize FastMCP server
-mcp = FastMCP("Nacos-mcp-server")
-settings = Settings()
+#Initialize nacos-server
+nacos_settings = NacosSettings()
+nacos_settings.SERVER_ADDR = "127.0.0.1:8848" #"<nacos-server-addr> e.g. 127.0.0.1:8848"
+mcp = NacosMCP("Demo", nacos_settings=nacos_settings,
+               host="127.0.0.2",
+               port=8001,
+               instructions="This is a simple Nacos MCP server",
+               version="1.0.0")
 
-settings.debug = True
-settings.host = "127.0.0.1"
-settings.host = 8000
+# # Initialize FastMCP server
+# mcp = FastMCP("Nacos-mcp-server")
+# settings = Settings()
+# settings.debug = True
+# settings.host = "127.0.0.1"
+# settings.host = 8000
 
 
 # 配置信息
